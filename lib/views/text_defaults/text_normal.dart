@@ -3,13 +3,19 @@ import 'package:huy_resume/utils/default_colors.dart';
 import 'package:huy_resume/utils/dipro_font.dart';
 
 class NormalText extends StatelessWidget {
-  NormalText(this.text, {Key? key, this.fontStyle, this.color, this.fontFamily})
+  NormalText(this.text,
+      {Key? key,
+      this.fontStyle,
+      this.color,
+      this.fontFamily,
+      this.isCenter = false})
       : super(key: key);
 
   String text;
   FontStyle? fontStyle;
   Color? color;
   String? fontFamily;
+  bool isCenter;
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +27,7 @@ class NormalText extends StatelessWidget {
         fontStyle: fontStyle,
         fontFamily: (fontFamily ?? DINPro.light),
       ),
+      textAlign: isCenter ? TextAlign.center : TextAlign.left,
     );
   }
 }

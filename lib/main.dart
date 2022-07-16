@@ -12,7 +12,7 @@ class WebApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'CHAD G.',
+        title: 'Huy NGUYEN NGOC',
         theme: ThemeData(
             primaryColor: WebColors.primary,
             appBarTheme: const AppBarTheme(color: WebColors.primary)),

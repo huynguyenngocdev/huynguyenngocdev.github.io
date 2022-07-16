@@ -41,7 +41,7 @@ class WebPageState extends State<WebPage> {
                 DrawerTop(),
                 DrawerItem(
                   AppIcons.person,
-                  "About",
+                  "About me",
                   selectedItem == 0,
                   onPressed: () {
                     _setStateItemId(0);

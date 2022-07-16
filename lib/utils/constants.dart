@@ -1,18 +1,17 @@
-const Header_Title = "CHAD G.";
-const Header_SubTitle = "MOBILE DEVELOPER";
+// ignore_for_file: constant_identifier_names
+
+const Header_Title = "NGUYEN NGOC Huy";
+const Header_SubTitle = "FRESHER FLUTTER DEVELOPER";
 
 const Header_Link_0 = "https://www.google.com";
-const Header_Link_1 = "https://www.facebook.com/WynseL123";
-const Header_Link_2 = "https://twitter.com/wynsel123";
-const Header_Link_3 = "https://github.com/WynseL";
-const Header_Link_4 =
-    "https://bitbucket.org/%7Badc1ad9e-828b-4215-b9c6-c4a0734db3bc%7D/";
-const Header_Link_5 = "https://www.linkedin.com/in/chadwyn-gonzales-19436a7a/";
+const Header_Link_1 = "https://www.facebook.com/nguyen.ngoc.huy.2k1";
+const Header_Link_2 = "https://github.com/huynguyenngocdev";
+const Header_Link_3 = "https://www.linkedin.com/in/nguyen-huy-591b01225";
 
 const Contact_Info_Title = "Contact Information";
-const Contact_Info_Location = ["Location", "asddasddsad"];
-const Contact_Info_Email = ["Email", "asdadadsadasdasd"];
-const Contact_Info_Mobile = ["Mobile Number", "+19837121309"];
+const Contact_Info_Location = ["Location", "Danang, Vietnam"];
+const Contact_Info_Email = ["Email", "huynguyenngoc.dev@gmail.com"];
+const Contact_Info_Mobile = ["Mobile Number", ""];
 
 const About_Me_Title = "About";
 const About_Me_Desc =

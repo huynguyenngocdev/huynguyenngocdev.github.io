@@ -8,7 +8,7 @@ class DrawerTop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(40),
+      padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 10),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -16,16 +16,15 @@ class DrawerTop extends StatelessWidget {
           Container(
             width: 100.0,
             height: 100.0,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 color: WebColors.darkPrimary,
-                boxShadow: const [
+                boxShadow: [
                   BoxShadow(color: Color.fromRGBO(2, 4, 16, 1)),
                 ],
-                image: const DecorationImage(
-                    image: NetworkImage("images/main_logo.jpg"),
+                image: DecorationImage(
+                    image: NetworkImage("images/main_logo.png"),
                     fit: BoxFit.cover),
-                borderRadius: const BorderRadius.all(Radius.circular(150.0)),
-                border: Border.all(color: Colors.red, width: 5.0)),
+                borderRadius: BorderRadius.all(Radius.circular(150.0))),
           ),
           const SizedBox(width: 0.0, height: 8.0),
           const Text(
@@ -34,11 +33,14 @@ class DrawerTop extends StatelessWidget {
                 fontSize: 24,
                 fontFamily: DINPro.medium,
                 color: WebColors.light),
+            textAlign: TextAlign.center,
           ),
+          const SizedBox(width: 0.0, height: 8.0),
           NormalText(
             Header_SubTitle,
             color: WebColors.light,
             fontFamily: DINPro.light,
+            isCenter: true,
           ),
         ],
       ),

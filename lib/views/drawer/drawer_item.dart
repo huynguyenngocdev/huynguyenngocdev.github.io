@@ -4,21 +4,22 @@ import 'package:huy_resume/utils/dipro_font.dart';
 import 'package:huy_resume/views/text_defaults/text_normal.dart';
 
 class DrawerItem extends StatelessWidget {
-  DrawerItem(this.icon, this.text, this.isSelected, {Key? key, this.onPressed})
+  DrawerItem(this.icon, this.text, this.isSelected,
+      {Key? key, required this.onPressed})
       : super(key: key);
 
   IconData icon;
   String text;
   bool isSelected;
 
-  Function? onPressed;
+  Function onPressed;
 
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
       color: (isSelected ? WebColors.light : null),
-      onPressed: () => onPressed,
-      padding: const EdgeInsets.fromLTRB(32, 0, 0, 0),
+      onPressed: () => onPressed(),
+      padding: const EdgeInsets.fromLTRB(32, 15, 0, 15),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.start,

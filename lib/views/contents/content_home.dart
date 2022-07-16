@@ -67,14 +67,12 @@ class HomeContentState extends State<HomeContent> {
               Container(
                 width: 240.0,
                 height: 240.0,
-                decoration: BoxDecoration(
-                    color: const Color(0x00000fff),
-                    image: const DecorationImage(
-                        image: NetworkImage("images/itsamechad.jpg"),
+                decoration: const BoxDecoration(
+                    color: Color(0x00000fff),
+                    image: DecorationImage(
+                        image: NetworkImage("images/avatar.jpg"),
                         fit: BoxFit.cover),
-                    borderRadius:
-                        const BorderRadius.all(Radius.circular(150.0)),
-                    border: Border.all(color: Colors.red, width: 20.0)),
+                    borderRadius: BorderRadius.all(Radius.circular(150.0))),
               ),
               const SizedBox(width: 0.0, height: 32.0),
               BigText(Header_Title),
@@ -85,14 +83,10 @@ class HomeContentState extends State<HomeContent> {
                 children: <Widget>[
                   _decoratedIcon(0, AppIcons.facebook_1, Colors.white,
                       Colors.blue, Header_Link_1), // Facebook
-                  _decoratedIcon(1, AppIcons.twitter, Colors.white,
-                      Colors.lightBlue, Header_Link_2), //Twitter
-                  _decoratedIcon(2, AppIcons.github, Colors.white, Colors.black,
-                      Header_Link_3), // Github
-                  _decoratedIcon(3, AppIcons.bitbucket, Colors.white,
-                      Colors.blue, Header_Link_4), // Bitbucket
-                  _decoratedIcon(4, AppIcons.linkedin, Colors.blue,
-                      Colors.white, Header_Link_5), // LinkedIn
+                  _decoratedIcon(1, AppIcons.github, Colors.white, Colors.black,
+                      Header_Link_2), // Github
+                  _decoratedIcon(2, AppIcons.linkedin, Colors.blue,
+                      Colors.white, Header_Link_3), // LinkedIn
                 ],
               ),
             ],
