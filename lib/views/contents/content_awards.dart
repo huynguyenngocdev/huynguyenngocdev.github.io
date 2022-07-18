@@ -58,9 +58,9 @@ class AwardsContent extends StatelessWidget {
             flex: 1,
             child: ListView(
               children: <Widget>[
-                _awardItem(angelhackJuicebox, [
+                _awardItem(startUpWheel, [
                   const Tuple2(AppIcons.link,
-                      "https://e27.co/angelhack-manila-winner-has-a-futuristic-iot-juicebox-for-a-healthy-you-20150813/")
+                      "https://startupwheel.vn/vi/cong-bo-top-100-startup-wheel-2022-vietnam/")
                 ])
               ],
             ),

@@ -7,58 +7,79 @@ import 'package:huy_resume/views/text_defaults/text_item_title.dart';
 import 'package:huy_resume/views/text_defaults/text_normal.dart';
 import 'package:huy_resume/views/text_defaults/text_page_title.dart';
 
-class SkillsContent extends StatelessWidget {
+class SkillsContent extends StatefulWidget {
   const SkillsContent({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    _cardItems(IconData icon, List value) {
-      return SizedBox(
-        width: 200,
-        height: 100,
-        child: Card(
-          elevation: 3,
-          child: Container(
-            padding: const EdgeInsets.all(16),
-            child: Column(
+  State<SkillsContent> createState() => _SkillsContentState();
+}
+
+class _SkillsContentState extends State<SkillsContent> {
+  double widthCard = 200;
+  @override
+  void didChangeDependencies() {
+    final sizeScreen = MediaQuery.of(context).size;
+
+    setState(() {
+      widthCard = sizeScreen.width;
+      //64 = padding left+right
+      //15 * n = space_each_card * num_of_card_in_row
+      if (ResponsiveLayout.isLargeScreen(context)) {
+        widthCard = (sizeScreen.width - DrawerWidth - 64 - 15 * 3) / 3;
+      }
+      if (ResponsiveLayout.isMediumScreen(context)) {
+        widthCard = (sizeScreen.width - DrawerWidth - 64 - 15 * 2) / 2;
+      }
+    });
+    super.didChangeDependencies();
+  }
+
+  _cardItems(IconData icon, List value) {
+    return Card(
+      elevation: 5,
+      child: Container(
+        width: widthCard,
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    Container(
-                      height: 60.0,
-                      width: 60.0,
-                      decoration: const BoxDecoration(
-                          color: WebColors.light, shape: BoxShape.circle),
-                      child: Icon(
-                        icon,
-                        color: WebColors.primary,
-                        size: 32,
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 16,
-                    ),
-                    ItemTitleText(value[0]),
-                  ],
+                Container(
+                  height: 60.0,
+                  width: 60.0,
+                  decoration: const BoxDecoration(
+                      color: WebColors.light, shape: BoxShape.circle),
+                  child: Icon(
+                    icon,
+                    color: WebColors.primary,
+                    size: 32,
+                  ),
                 ),
                 const SizedBox(
-                  height: 16,
+                  width: 16,
                 ),
-                NormalText(value[1]),
+                Expanded(child: ItemTitleText(value[0])),
               ],
             ),
-          ),
+            const SizedBox(
+              height: 16,
+            ),
+            NormalText(value[1]),
+          ],
         ),
-      );
-    }
+      ),
+    );
+  }
 
+  @override
+  Widget build(BuildContext context) {
     return Container(
+      width: double.infinity,
       color: WebColors.light,
-      height: MediaQuery.of(context).size.height,
       padding: const EdgeInsets.all(32),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -69,14 +90,10 @@ class SkillsContent extends StatelessWidget {
             height: 16,
           ),
           Expanded(
-            flex: 1,
-            child: GridView.count(
-              shrinkWrap: false,
-              padding: const EdgeInsets.all(4.0),
-              mainAxisSpacing: 4.0,
-              childAspectRatio: 2,
-              crossAxisSpacing: 32.0,
-              crossAxisCount: (ResponsiveLayout.isLargeScreen(context) ? 3 : 1),
+            child: Wrap(
+              spacing: 10,
+              runSpacing: 10,
+              alignment: WrapAlignment.spaceBetween,
               children: <Widget>[
                 _cardItems(AppIcons.phone_android, Skills_1),
                 _cardItems(AppIcons.web, Skills_2),

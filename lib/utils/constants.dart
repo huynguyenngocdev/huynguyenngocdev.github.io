@@ -20,11 +20,11 @@ const About_Me_Desc =
 
 const Skills_Title = "SKILLS";
 const Skills_1 = ["Mobile", "Flutter/Dart, React Native"];
-const Skills_2 = ["Web", "HTML, CSS, PHP, Javascript, Flutter Web"];
-const Skills_3 = ["Automation", "JUnit, Robot Framework, Appium, Python"];
+const Skills_2 = ["Web", "HTML, CSS, ReactJS, Laravel, Flutter"];
+const Skills_3 = ["Automation test", "Cypress, WebdriverIO"];
 const Skills_4 = [
   "Others",
-  "Machine Learning, Image Recognition, Internet of Things (IoT), Firebase, OpenCV, OpenID Authentication"
+  "Unit Test, Firebase, MongoDB, OOP, SOLID, Agile/Scrum"
 ];
 
 const DrawerWidth = 250.0;
@@ -50,12 +50,12 @@ const fdaToUseEDSS = [
 ];
 /* MILESTONES */
 
-/* AWARDS */
-const Awards_Title = "AWARDS";
-const angelhackJuicebox = [
-  "AngelHack Manila winner has a futuristic IoT JuiceBox for a healthy you",
-  "August 13, 2015",
-  "An e27 article about my team Divided By Zero's success for developing an automated, IoT juicer with a mobile app. Read the full story here."
+/* ACHIEVEMENTS */
+const Awards_Title = "ACHIEVEMENTS";
+const startUpWheel = [
+  "In the top 100 of Startup Wheel 2022",
+  "July, 2022",
+  "Little Star is an app to help children from 3 to 7 years old learn Vietnamese with listening - reading - speaking skills and watch good videos that have safe content and are useful for the growth of the child.\nRead the full story here."
 ];
 
-/* AWARDS */
+/* ACHIEVEMENTS */

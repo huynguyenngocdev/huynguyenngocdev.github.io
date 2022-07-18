@@ -59,19 +59,19 @@ class MobilePageState extends State<MobilePage> {
                 },
               ),
               DrawerItem(
-                AppIcons.award,
-                "Awards",
-                selectedItem == 2,
-                onPressed: () {
-                  _setStateItemId(2);
-                },
-              ),
-              DrawerItem(
                 AppIcons.pin,
                 "News & Articles",
                 selectedItem == 3,
                 onPressed: () {
                   _setStateItemId(3);
+                },
+              ),
+              DrawerItem(
+                AppIcons.award,
+                "Achievements",
+                selectedItem == 2,
+                onPressed: () {
+                  _setStateItemId(2);
                 },
               ),
             ],
