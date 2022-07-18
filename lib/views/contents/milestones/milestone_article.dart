@@ -6,10 +6,11 @@ import 'package:huy_resume/views/text_defaults/text_item_title.dart';
 import 'package:huy_resume/views/text_defaults/text_normal.dart';
 
 class MilestoneArticle extends StatelessWidget {
-  MilestoneArticle(this.value, {required this.buttons});
+  const MilestoneArticle(this.value, {Key? key, required this.buttons})
+      : super(key: key);
 
-  List value;
-  List buttons;
+  final List value;
+  final List buttons;
 
   @override
   Widget build(BuildContext context) {

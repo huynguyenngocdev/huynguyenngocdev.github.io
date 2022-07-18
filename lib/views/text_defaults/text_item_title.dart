@@ -3,14 +3,14 @@ import 'package:huy_resume/utils/default_colors.dart';
 import 'package:huy_resume/utils/dipro_font.dart';
 
 class ItemTitleText extends StatelessWidget {
-  ItemTitleText(this.text,
+  const ItemTitleText(this.text,
       {Key? key, this.fontStyle, this.color, this.fontFamily})
       : super(key: key);
 
   final String text;
-  FontStyle? fontStyle;
-  Color? color;
-  String? fontFamily;
+  final FontStyle? fontStyle;
+  final Color? color;
+  final String? fontFamily;
 
   @override
   Widget build(BuildContext context) {

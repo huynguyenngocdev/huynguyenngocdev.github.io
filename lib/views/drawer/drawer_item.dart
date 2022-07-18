@@ -4,15 +4,15 @@ import 'package:huy_resume/utils/dipro_font.dart';
 import 'package:huy_resume/views/text_defaults/text_normal.dart';
 
 class DrawerItem extends StatelessWidget {
-  DrawerItem(this.icon, this.text, this.isSelected,
+  const DrawerItem(this.icon, this.text, this.isSelected,
       {Key? key, required this.onPressed})
       : super(key: key);
 
-  IconData icon;
-  String text;
-  bool isSelected;
+  final IconData icon;
+  final String text;
+  final bool isSelected;
 
-  Function onPressed;
+  final Function onPressed;
 
   @override
   Widget build(BuildContext context) {

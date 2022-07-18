@@ -24,9 +24,7 @@ flutter:
     - family: AppIcons
       fonts:
         - asset: assets/fonts/AppIcons.ttf
-    - family: MaterialIcons
-      fonts:
-        - asset: assets/fonts/MaterialIcons-Regular.ttf
+    
     - family: DINPro Black
       fonts:
         - asset: assets/fonts/dinpro/DINPro-Black.ttf

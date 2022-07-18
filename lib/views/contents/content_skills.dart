@@ -8,6 +8,8 @@ import 'package:huy_resume/views/text_defaults/text_normal.dart';
 import 'package:huy_resume/views/text_defaults/text_page_title.dart';
 
 class SkillsContent extends StatelessWidget {
+  const SkillsContent({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     _cardItems(IconData icon, List value) {
@@ -62,7 +64,7 @@ class SkillsContent extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          PageTitleText(Skills_Title),
+          const PageTitleText(Skills_Title),
           const SizedBox(
             height: 16,
           ),

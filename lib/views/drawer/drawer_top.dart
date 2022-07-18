@@ -5,6 +5,8 @@ import 'package:huy_resume/utils/dipro_font.dart';
 import 'package:huy_resume/views/text_defaults/text_normal.dart';
 
 class DrawerTop extends StatelessWidget {
+  const DrawerTop({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -36,7 +38,7 @@ class DrawerTop extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           const SizedBox(width: 0.0, height: 8.0),
-          NormalText(
+          const NormalText(
             Header_SubTitle,
             color: WebColors.light,
             fontFamily: DINPro.light,
@@ -46,9 +48,6 @@ class DrawerTop extends StatelessWidget {
       ),
       decoration: const BoxDecoration(
         color: WebColors.primary,
-        boxShadow: [
-          BoxShadow(color: WebColors.light),
-        ],
       ),
     );
   }

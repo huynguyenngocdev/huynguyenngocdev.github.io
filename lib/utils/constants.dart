@@ -3,10 +3,10 @@
 const Header_Title = "NGUYEN NGOC Huy";
 const Header_SubTitle = "FRESHER FLUTTER DEVELOPER";
 
-const Header_Link_0 = "https://www.google.com";
 const Header_Link_1 = "https://www.facebook.com/nguyen.ngoc.huy.2k1";
 const Header_Link_2 = "https://github.com/huynguyenngocdev";
 const Header_Link_3 = "https://www.linkedin.com/in/nguyen-huy-591b01225";
+const Header_Link_4 = "mailto:huynguyenngoc.dev@gmail.com";
 
 const Contact_Info_Title = "Contact Information";
 const Contact_Info_Location = ["Location", "Danang, Vietnam"];
@@ -15,13 +15,11 @@ const Contact_Info_Mobile = ["Mobile Number", ""];
 
 const About_Me_Title = "About";
 const About_Me_Desc =
-    "A responsive, passionate mobile engineer who has an extensive knowledge about mobile development. Focused on Android and iOS platforms, his main goal is to create an app that meets customer needs and deliver it on time. Furthermore, he is updated and follows the latest tech trends and stacks, attends seminars and meetups.\n\nI'm also open for side projects and hackathons, so if you need someone who has an expertise in mobile developement, or just basically get in touch and chat, feel free to contact me with these social networks below.";
+    "As an enthusiastic, responsive, passionate, and goal-driven programmer, I am looking to apply my knowledge and want to learn and grow all of my abilities to meet every customer's needs. Furthermore, I usually update and follow the latest tech trends and stacks and attend seminars and meetups."
+    "\n\nI'm also open for side projects and finding a job, so if you need someone who has expertise in mobile/back-end development, or just basically gets in touch and chat, feels free to contact me with these social networks below.";
 
 const Skills_Title = "SKILLS";
-const Skills_1 = [
-  "Mobile",
-  "Java, Kotlin, Objective-C, Swift, C#, Flutter/Dart"
-];
+const Skills_1 = ["Mobile", "Flutter/Dart, React Native"];
 const Skills_2 = ["Web", "HTML, CSS, PHP, Javascript, Flutter Web"];
 const Skills_3 = ["Automation", "JUnit, Robot Framework, Appium, Python"];
 const Skills_4 = [

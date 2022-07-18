@@ -28,7 +28,7 @@ class MobilePageState extends State<MobilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: NormalText(
+        title: const NormalText(
           "MENU",
           fontFamily: DINPro.bold,
           color: WebColors.light,
@@ -41,7 +41,7 @@ class MobilePageState extends State<MobilePage> {
           child: ListView(
             children: <Widget>[
               // Top Bar
-              DrawerTop(),
+              const DrawerTop(),
               DrawerItem(
                 AppIcons.person,
                 "About",

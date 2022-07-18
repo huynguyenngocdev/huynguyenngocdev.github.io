@@ -5,26 +5,25 @@ import 'package:huy_resume/views/contents/content_home.dart';
 import 'package:huy_resume/views/contents/content_skills.dart';
 
 class ContentFrame extends StatelessWidget {
-  int contentId;
-
-  ContentFrame(this.contentId, {Key? key}) : super(key: key);
+  const ContentFrame(this.contentId, {Key? key}) : super(key: key);
+  final int contentId;
   Widget _defineContent(int contentId) {
     switch (contentId) {
       case 1:
-        return SkillsContent();
+        return const SkillsContent();
       case 2:
-        return AwardsContent();
+        return const AwardsContent();
       case 3:
-        return BackgroundContent();
+        return const BackgroundContent();
       default:
-        return HomeContent();
+        return const HomeContent();
     }
   }
 
   @override
   Widget build(BuildContext context) {
     return AnimatedSwitcher(
-        duration: const Duration(milliseconds: 450),
+        duration: const Duration(milliseconds: 350),
         transitionBuilder: (Widget child, Animation<double> animation) =>
             ScaleTransition(
                 scale: animation, child: child, alignment: Alignment.topCenter),

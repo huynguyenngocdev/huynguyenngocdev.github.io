@@ -5,9 +5,9 @@ import 'package:huy_resume/views/text_defaults/text_item_title.dart';
 import 'package:huy_resume/views/text_defaults/text_normal.dart';
 
 class MilestoneJob extends StatelessWidget {
-  MilestoneJob(this.value);
+  const MilestoneJob(this.value, {Key? key}) : super(key: key);
 
-  List value;
+  final List value;
 
   @override
   Widget build(BuildContext context) {

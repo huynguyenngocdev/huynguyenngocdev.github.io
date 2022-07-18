@@ -38,7 +38,7 @@ class WebPageState extends State<WebPage> {
             child: ListView(
               children: <Widget>[
                 // Top Bar
-                DrawerTop(),
+                const DrawerTop(),
                 DrawerItem(
                   AppIcons.person,
                   "About me",

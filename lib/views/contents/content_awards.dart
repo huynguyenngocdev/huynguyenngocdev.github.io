@@ -9,6 +9,8 @@ import 'package:huy_resume/views/text_defaults/text_page_title.dart';
 import 'package:tuple/tuple.dart';
 
 class AwardsContent extends StatelessWidget {
+  const AwardsContent({Key? key}) : super(key: key);
+
   _awardItem(List value, List buttons) {
     return Card(
       child: Container(
@@ -48,7 +50,7 @@ class AwardsContent extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          PageTitleText(Awards_Title),
+          const PageTitleText(Awards_Title),
           const SizedBox(
             height: 16,
           ),

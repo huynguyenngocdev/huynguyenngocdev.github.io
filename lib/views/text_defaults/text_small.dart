@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:huy_resume/utils/default_colors.dart';
 
 class SmallText extends StatelessWidget {
-  SmallText(this.text, {this.fontStyle});
+  const SmallText(this.text, {Key? key, this.fontStyle}) : super(key: key);
 
-  String text;
-  FontStyle? fontStyle;
+  final String text;
+  final FontStyle? fontStyle;
 
   @override
   Widget build(BuildContext context) {

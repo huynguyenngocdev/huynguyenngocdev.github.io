@@ -1,3 +1,4 @@
+// ignore: avoid_web_libraries_in_flutter
 import 'dart:js' as js;
 
 import 'package:flutter/material.dart';
@@ -9,6 +10,8 @@ import 'package:huy_resume/views/text_defaults/text_big.dart';
 import 'package:huy_resume/views/text_defaults/text_normal.dart';
 
 class HomeContent extends StatefulWidget {
+  const HomeContent({Key? key}) : super(key: key);
+
   @override
   State<StatefulWidget> createState() => HomeContentState();
 }
@@ -22,28 +25,25 @@ class HomeContentState extends State<HomeContent> {
       margin: const EdgeInsets.fromLTRB(8, 4, 8, 4),
       width: 40.0,
       height: 40.0,
-      child: InkWell(
-        borderRadius: BorderRadius.circular(20),
-        onHover: (hover) {
-          setState(() {
-            _iconHoverState[id] = hover;
-          });
-        },
-        onTap: () {},
-        child: RaisedButton(
-          elevation: 0,
+      child: Container(
+        decoration: BoxDecoration(
           color: (_iconHoverState[id] ? bgcolor : WebColors.lightPrimary),
-          onPressed: () {
+          shape: BoxShape.circle,
+        ),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(20),
+          onHover: (hover) {
+            setState(() {
+              _iconHoverState[id] = hover;
+            });
+          },
+          onTap: () {
             js.context.callMethod("open", [urlToOpen]);
           },
-          padding: const EdgeInsets.all(0.0),
-          child: IconButton(
-            onPressed: null,
-            icon: Icon(icon,
-                color: (_iconHoverState[id] ? iconColor : WebColors.light)),
+          child: Icon(
+            icon,
+            color: (_iconHoverState[id] ? iconColor : WebColors.light),
           ),
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
         ),
       ),
     );
@@ -75,8 +75,8 @@ class HomeContentState extends State<HomeContent> {
                     borderRadius: BorderRadius.all(Radius.circular(150.0))),
               ),
               const SizedBox(width: 0.0, height: 32.0),
-              BigText(Header_Title),
-              NormalText(About_Me_Desc),
+              const BigText(Header_Title),
+              const NormalText(About_Me_Desc),
               const SizedBox(width: 0.0, height: 16.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -87,6 +87,8 @@ class HomeContentState extends State<HomeContent> {
                       Header_Link_2), // Github
                   _decoratedIcon(2, AppIcons.linkedin, Colors.blue,
                       Colors.white, Header_Link_3), // LinkedIn
+                  _decoratedIcon(3, Icons.mail, Colors.red, Colors.white,
+                      Header_Link_4), // Gmail
                 ],
               ),
             ],

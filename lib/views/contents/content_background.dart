@@ -8,6 +8,8 @@ import 'package:huy_resume/views/text_defaults/text_page_title.dart';
 import 'package:tuple/tuple.dart';
 
 class BackgroundContent extends StatefulWidget {
+  const BackgroundContent({Key? key}) : super(key: key);
+
   @override
   State<StatefulWidget> createState() => BackgroundContentState();
 }
@@ -123,7 +125,7 @@ class BackgroundContentState extends State<BackgroundContent> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            PageTitleText(Milestone_Title),
+            const PageTitleText(Milestone_Title),
             const SizedBox(
               height: 16,
             ),
@@ -132,23 +134,23 @@ class BackgroundContentState extends State<BackgroundContent> {
               child: ListView(
                 children: <Widget>[
                   _timelineStart(),
-                  MilestoneArticle(
+                  const MilestoneArticle(
                     mClinicaGoes1stFlutterPHEvent,
-                    buttons: const [
+                    buttons: [
                       Tuple2(AppIcons.link,
                           "https://medium.com/mclinica-tech/mclinica-goes-to-flutter-philippines-1st-ever-study-jam-db987b868adb"),
                     ],
                   ),
-                  MilestoneNews(
+                  const MilestoneNews(
                     fdaToUseEDSS,
-                    buttons: const [
+                    buttons: [
                       Tuple2(AppIcons.link,
                           "https://www.rappler.com/science-nature/life-health/215910-pharmacy-logbooks-digital-2020-mclinica-food-and-drug-administration"),
                     ],
                   ),
-                  MilestoneNews(
+                  const MilestoneNews(
                     digitalLogbookEDSS,
-                    buttons: const [
+                    buttons: [
                       Tuple2(AppIcons.link,
                           "https://www.bworldonline.com/fda-to-use-mclinica-app-to-monitor-prescriptions/"),
                     ],

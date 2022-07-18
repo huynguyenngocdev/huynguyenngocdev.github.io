@@ -3,11 +3,12 @@ import 'package:huy_resume/utils/constants.dart';
 import 'package:huy_resume/utils/default_colors.dart';
 
 class MilestoneBase extends StatelessWidget {
-  MilestoneBase(this.icon, this.value, {this.content});
+  const MilestoneBase(this.icon, this.value, {Key? key, this.content})
+      : super(key: key);
 
-  IconData icon;
-  List value;
-  Widget? content;
+  final IconData icon;
+  final List value;
+  final Widget? content;
 
   @override
   Widget build(BuildContext context) {
