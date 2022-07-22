@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:huy_resume/utils/constants.dart';
 import 'package:huy_resume/utils/default_colors.dart';
 import 'package:huy_resume/utils/dipro_font.dart';
-import 'package:huy_resume/views/text_defaults/text_normal.dart';
+import 'package:huy_resume/utils/text_defaults/text_normal.dart';
 
 class DrawerTop extends StatelessWidget {
   const DrawerTop({Key? key}) : super(key: key);

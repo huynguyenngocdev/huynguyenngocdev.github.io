@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:huy_resume/utils/app_icons.dart';
 import 'package:huy_resume/utils/constants.dart';
 import 'package:huy_resume/utils/default_colors.dart';
-import 'package:huy_resume/views/responsive_layout.dart';
-import 'package:huy_resume/views/text_defaults/text_big.dart';
-import 'package:huy_resume/views/text_defaults/text_normal.dart';
+import 'package:huy_resume/utils/responsive_layout.dart';
+import 'package:huy_resume/utils/text_defaults/text_big.dart';
+import 'package:huy_resume/utils/text_defaults/text_normal.dart';
 
 class HomeContent extends StatefulWidget {
   const HomeContent({Key? key}) : super(key: key);

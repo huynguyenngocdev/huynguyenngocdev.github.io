@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:huy_resume/utils/constants.dart';
 import 'package:huy_resume/utils/page.dart';
-import 'package:huy_resume/views/drawer/drawer_item.dart';
-import 'package:huy_resume/views/drawer/drawer_top.dart';
+
+import 'drawer_item.dart';
+import 'drawer_top.dart';
 
 class DrawerCustom extends StatelessWidget {
   const DrawerCustom(

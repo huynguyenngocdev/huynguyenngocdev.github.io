@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:huy_resume/utils/app_icons.dart';
 import 'package:huy_resume/utils/constants.dart';
 import 'package:huy_resume/utils/default_colors.dart';
-import 'package:huy_resume/views/buttons/button_list.dart';
-import 'package:huy_resume/views/text_defaults/text_item_title.dart';
-import 'package:huy_resume/views/text_defaults/text_normal.dart';
-import 'package:huy_resume/views/text_defaults/text_page_title.dart';
+import 'package:huy_resume/utils/text_defaults/text_item_title.dart';
+import 'package:huy_resume/utils/text_defaults/text_normal.dart';
+import 'package:huy_resume/utils/text_defaults/text_page_title.dart';
+import 'package:huy_resume/views/widgets/buttons/button_list.dart';
 import 'package:tuple/tuple.dart';
 
 class AchievementsContent extends StatelessWidget {

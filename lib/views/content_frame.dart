@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:huy_resume/utils/page.dart';
-import 'package:huy_resume/views/contents/content_achievements.dart';
-import 'package:huy_resume/views/contents/content_background.dart';
-import 'package:huy_resume/views/contents/content_home.dart';
-import 'package:huy_resume/views/contents/content_skills.dart';
+import 'package:huy_resume/views/widgets/contents/content_achievements.dart';
+import 'package:huy_resume/views/widgets/contents/content_background.dart';
+import 'package:huy_resume/views/widgets/contents/content_home.dart';
+import 'package:huy_resume/views/widgets/contents/content_skills.dart';
 
 class ContentFrame extends StatelessWidget {
   const ContentFrame(this.pageSelected, {Key? key}) : super(key: key);

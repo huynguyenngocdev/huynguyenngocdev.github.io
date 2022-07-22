@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:huy_resume/utils/app_icons.dart';
-import 'package:huy_resume/views/buttons/button_list.dart';
-import 'package:huy_resume/views/contents/milestones/milestone_base.dart';
-import 'package:huy_resume/views/text_defaults/text_item_title.dart';
-import 'package:huy_resume/views/text_defaults/text_normal.dart';
+import 'package:huy_resume/utils/text_defaults/text_item_title.dart';
+import 'package:huy_resume/utils/text_defaults/text_normal.dart';
+import 'package:huy_resume/views/widgets/buttons/button_list.dart';
+import 'package:huy_resume/views/widgets/contents/milestones/milestone_base.dart';
 
-class MilestoneArticle extends StatelessWidget {
-  const MilestoneArticle(this.value, {Key? key, required this.buttons})
+class MilestoneNews extends StatelessWidget {
+  const MilestoneNews(this.value, {Key? key, required this.buttons})
       : super(key: key);
 
   final List value;
@@ -15,7 +15,7 @@ class MilestoneArticle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MilestoneBase(
-      AppIcons.article,
+      AppIcons.article_alt,
       value,
       content: Column(
         mainAxisSize: MainAxisSize.min,

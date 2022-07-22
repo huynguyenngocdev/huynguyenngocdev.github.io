@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:huy_resume/utils/default_colors.dart';
 import 'package:huy_resume/utils/dipro_font.dart';
 import 'package:huy_resume/utils/page.dart';
+import 'package:huy_resume/utils/text_defaults/text_normal.dart';
 import 'package:huy_resume/views/content_frame.dart';
-import 'package:huy_resume/views/drawer/drawer_custom.dart';
-import 'package:huy_resume/views/text_defaults/text_normal.dart';
+import 'package:huy_resume/views/widgets/drawer/drawer_custom.dart';
 
 class MobilePage extends StatefulWidget {
   const MobilePage({Key? key}) : super(key: key);

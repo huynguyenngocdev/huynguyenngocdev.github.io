@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:huy_resume/app_icons.dart';
+import 'package:huy_resume/utils/app_icons.dart';
 import 'package:huy_resume/utils/constants.dart';
 import 'package:huy_resume/utils/default_colors.dart';
-import 'package:huy_resume/views/contents/milestones/milestone_article.dart';
-import 'package:huy_resume/views/contents/milestones/milestone_news.dart';
-import 'package:huy_resume/views/text_defaults/text_page_title.dart';
+import 'package:huy_resume/utils/text_defaults/text_page_title.dart';
+import 'package:huy_resume/views/widgets/contents/milestones/milestone_article.dart';
+import 'package:huy_resume/views/widgets/contents/milestones/milestone_news.dart';
 import 'package:tuple/tuple.dart';
 
 class BackgroundContent extends StatefulWidget {

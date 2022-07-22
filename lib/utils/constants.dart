@@ -1,8 +1,8 @@
 // ignore_for_file: constant_identifier_names
 
 import 'package:flutter/material.dart';
-import 'package:huy_resume/app_icons.dart';
 import 'package:huy_resume/models/drawer_item_model.dart';
+import 'package:huy_resume/utils/app_icons.dart';
 
 import 'page.dart';
 

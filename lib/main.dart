@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:huy_resume/utils/default_colors.dart';
-import 'package:huy_resume/views/mobile_page.dart';
-import 'package:huy_resume/views/responsive_layout.dart';
-import 'package:huy_resume/views/web_page.dart';
+import 'package:huy_resume/utils/responsive_layout.dart';
+import 'package:huy_resume/views/pages/mobile_page.dart';
+import 'package:huy_resume/views/pages/web_page.dart';
 
 void main() => runApp(const WebApp());
 
