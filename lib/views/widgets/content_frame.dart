@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:huy_resume/utils/page.dart';
 import 'package:huy_resume/views/widgets/contents/content_achievements.dart';
-import 'package:huy_resume/views/widgets/contents/content_background.dart';
+import 'package:huy_resume/views/widgets/contents/content_education.dart';
 import 'package:huy_resume/views/widgets/contents/content_home.dart';
 import 'package:huy_resume/views/widgets/contents/content_skills.dart';
 
@@ -15,7 +15,7 @@ class ContentFrame extends StatelessWidget {
       case PAGE.achievements:
         return const AchievementsContent();
       case PAGE.education:
-        return const BackgroundContent();
+        return const EducationContent();
       default:
         return const HomeContent();
     }

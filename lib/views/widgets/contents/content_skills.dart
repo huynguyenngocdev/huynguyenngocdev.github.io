@@ -3,6 +3,7 @@ import 'package:huy_resume/utils/app_icons.dart';
 import 'package:huy_resume/utils/constants.dart';
 import 'package:huy_resume/utils/default_colors.dart';
 import 'package:huy_resume/utils/responsive_layout.dart';
+import 'package:huy_resume/utils/size_configs.dart';
 import 'package:huy_resume/utils/text_defaults/text_item_title.dart';
 import 'package:huy_resume/utils/text_defaults/text_normal.dart';
 import 'package:huy_resume/utils/text_defaults/text_page_title.dart';

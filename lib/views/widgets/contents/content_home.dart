@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:huy_resume/utils/app_icons.dart';
 import 'package:huy_resume/utils/constants.dart';
 import 'package:huy_resume/utils/default_colors.dart';
+import 'package:huy_resume/utils/dipro_font.dart';
 import 'package:huy_resume/utils/responsive_layout.dart';
 import 'package:huy_resume/utils/text_defaults/text_big.dart';
 import 'package:huy_resume/utils/text_defaults/text_normal.dart';
@@ -17,7 +18,7 @@ class HomeContent extends StatefulWidget {
 }
 
 class HomeContentState extends State<HomeContent> {
-  final List<bool> _iconHoverState = [false, false, false, false];
+  final List<bool> _iconHoverState = [false, false, false, false, false];
 
   _decoratedIcon(
       int id, IconData icon, Color bgcolor, Color iconColor, String urlToOpen) {
@@ -27,11 +28,11 @@ class HomeContentState extends State<HomeContent> {
         margin: const EdgeInsets.fromLTRB(8, 4, 8, 4),
         width: 40.0,
         height: 40.0,
-        child: Container(
-          decoration: BoxDecoration(
-            color: (_iconHoverState[id] ? bgcolor : WebColors.lightPrimary),
-            shape: BoxShape.circle,
-          ),
+        decoration: BoxDecoration(
+          color: (_iconHoverState[id] ? bgcolor : WebColors.lightPrimary),
+          shape: BoxShape.circle,
+        ),
+        child: Center(
           child: InkWell(
             borderRadius: BorderRadius.circular(20),
             onHover: (hover) {
@@ -47,6 +48,33 @@ class HomeContentState extends State<HomeContent> {
               color: (_iconHoverState[id] ? iconColor : WebColors.light),
             ),
           ),
+        ),
+      ),
+    );
+  }
+
+  _openResumeBtn(int id, String urlToOpen) {
+    return Container(
+      margin: const EdgeInsets.fromLTRB(8, 4, 8, 4),
+      padding: const EdgeInsets.fromLTRB(20, 8, 20, 10),
+      height: 40.0,
+      decoration: BoxDecoration(
+          color: (_iconHoverState[id] ? Colors.green : WebColors.lightPrimary),
+          borderRadius: BorderRadius.circular(25)),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(20),
+        onHover: (hover) {
+          setState(() {
+            _iconHoverState[id] = hover;
+          });
+        },
+        onTap: () {
+          js.context.callMethod("open", [urlToOpen]);
+        },
+        child: const NormalText(
+          "Resume",
+          color: WebColors.light,
+          fontFamily: DINPro.bold,
         ),
       ),
     );
@@ -92,6 +120,7 @@ class HomeContentState extends State<HomeContent> {
                       Colors.white, Header_Link_3), // LinkedIn
                   _decoratedIcon(3, Icons.mail, Colors.red, Colors.white,
                       Header_Link_4), // Gmail
+                  _openResumeBtn(4, "/resume/[CV]Nguyen_Ngoc_Huy.pdf"), // Gmail
                 ],
               ),
             ],

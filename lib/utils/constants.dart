@@ -6,12 +6,6 @@ import 'package:huy_resume/utils/app_icons.dart';
 
 import 'page.dart';
 
-/*  GENERAL SIZE */
-const DrawerWidth = 250.0;
-
-const MilestoneFixedIconSize = 60.0;
-/* GENEARAL SIZE */
-
 const HEADER_TITLE = "NGUYEN NGOC Huy";
 const HEADER_SUBTITLE = "FRESHER FLUTTER DEVELOPER";
 
@@ -48,8 +42,7 @@ const Education_Title = "EDUCATION";
 const Education_1 = [
   "Passerelles numériques Vietnam - DanaVTC",
   "Sep 2019  -  Oct 2022",
-  "Major: : Information Technology",
-  "GPA: 3.46/4"
+  "Major: : Information Technology\nGPA: 3.46/4"
 ];
 
 /* EDUCATION */
@@ -100,11 +93,6 @@ final List<DrawerItemModel> DRAWER_LIST = [
     page: PAGE.education,
   ),
   DrawerItemModel(
-    icon: AppIcons.award,
-    title: "Achievements",
-    page: PAGE.achievements,
-  ),
-  DrawerItemModel(
     icon: AppIcons.pin,
     title: "Experience",
     page: PAGE.experience,
@@ -115,8 +103,8 @@ final List<DrawerItemModel> DRAWER_LIST = [
     page: PAGE.portfolio,
   ),
   DrawerItemModel(
-    icon: Icons.person_search,
-    title: "Hiring Me",
-    page: PAGE.hire,
+    icon: AppIcons.award,
+    title: "Achievements",
+    page: PAGE.achievements,
   ),
 ];

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:huy_resume/utils/constants.dart';
 import 'package:huy_resume/utils/default_colors.dart';
 import 'package:huy_resume/utils/page.dart';
-import 'package:huy_resume/views/content_frame.dart';
+import 'package:huy_resume/utils/size_configs.dart';
+import 'package:huy_resume/views/widgets/content_frame.dart';
 import 'package:huy_resume/views/widgets/drawer/drawer_custom.dart';
 
 class WebPage extends StatefulWidget {
