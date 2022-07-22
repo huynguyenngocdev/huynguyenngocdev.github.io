@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:huy_resume/app_icons.dart';
+import 'package:huy_resume/utils/app_icons.dart';
 import 'package:huy_resume/utils/constants.dart';
 import 'package:huy_resume/utils/default_colors.dart';
 import 'package:huy_resume/views/responsive_layout.dart';

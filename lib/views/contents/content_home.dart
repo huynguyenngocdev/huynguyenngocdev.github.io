@@ -2,7 +2,7 @@
 import 'dart:js' as js;
 
 import 'package:flutter/material.dart';
-import 'package:huy_resume/app_icons.dart';
+import 'package:huy_resume/utils/app_icons.dart';
 import 'package:huy_resume/utils/constants.dart';
 import 'package:huy_resume/utils/default_colors.dart';
 import 'package:huy_resume/views/responsive_layout.dart';
@@ -17,32 +17,35 @@ class HomeContent extends StatefulWidget {
 }
 
 class HomeContentState extends State<HomeContent> {
-  final List<bool> _iconHoverState = [false, false, false, false, false];
+  final List<bool> _iconHoverState = [false, false, false, false];
 
   _decoratedIcon(
       int id, IconData icon, Color bgcolor, Color iconColor, String urlToOpen) {
-    return Container(
-      margin: const EdgeInsets.fromLTRB(8, 4, 8, 4),
-      width: 40.0,
-      height: 40.0,
+    return Tooltip(
+      message: urlToOpen,
       child: Container(
-        decoration: BoxDecoration(
-          color: (_iconHoverState[id] ? bgcolor : WebColors.lightPrimary),
-          shape: BoxShape.circle,
-        ),
-        child: InkWell(
-          borderRadius: BorderRadius.circular(20),
-          onHover: (hover) {
-            setState(() {
-              _iconHoverState[id] = hover;
-            });
-          },
-          onTap: () {
-            js.context.callMethod("open", [urlToOpen]);
-          },
-          child: Icon(
-            icon,
-            color: (_iconHoverState[id] ? iconColor : WebColors.light),
+        margin: const EdgeInsets.fromLTRB(8, 4, 8, 4),
+        width: 40.0,
+        height: 40.0,
+        child: Container(
+          decoration: BoxDecoration(
+            color: (_iconHoverState[id] ? bgcolor : WebColors.lightPrimary),
+            shape: BoxShape.circle,
+          ),
+          child: InkWell(
+            borderRadius: BorderRadius.circular(20),
+            onHover: (hover) {
+              setState(() {
+                _iconHoverState[id] = hover;
+              });
+            },
+            onTap: () {
+              js.context.callMethod("open", [urlToOpen]);
+            },
+            child: Icon(
+              icon,
+              color: (_iconHoverState[id] ? iconColor : WebColors.light),
+            ),
           ),
         ),
       ),
@@ -75,7 +78,7 @@ class HomeContentState extends State<HomeContent> {
                     borderRadius: BorderRadius.all(Radius.circular(150.0))),
               ),
               const SizedBox(width: 0.0, height: 32.0),
-              const BigText(Header_Title),
+              const BigText(HEADER_TITLE),
               const NormalText(About_Me_Desc),
               const SizedBox(width: 0.0, height: 16.0),
               Row(

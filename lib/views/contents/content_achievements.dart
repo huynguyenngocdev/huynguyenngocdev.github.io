@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:huy_resume/app_icons.dart';
+import 'package:huy_resume/utils/app_icons.dart';
 import 'package:huy_resume/utils/constants.dart';
 import 'package:huy_resume/utils/default_colors.dart';
 import 'package:huy_resume/views/buttons/button_list.dart';
@@ -8,8 +8,8 @@ import 'package:huy_resume/views/text_defaults/text_normal.dart';
 import 'package:huy_resume/views/text_defaults/text_page_title.dart';
 import 'package:tuple/tuple.dart';
 
-class AwardsContent extends StatelessWidget {
-  const AwardsContent({Key? key}) : super(key: key);
+class AchievementsContent extends StatelessWidget {
+  const AchievementsContent({Key? key}) : super(key: key);
 
   _awardItem(List value, List buttons) {
     return Card(
@@ -50,13 +50,14 @@ class AwardsContent extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          const PageTitleText(Awards_Title),
+          const PageTitleText(Achivements_Title),
           const SizedBox(
             height: 16,
           ),
           Expanded(
             flex: 1,
             child: ListView(
+              controller: ScrollController(),
               children: <Widget>[
                 _awardItem(startUpWheel, [
                   const Tuple2(AppIcons.link,

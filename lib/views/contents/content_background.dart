@@ -130,8 +130,9 @@ class BackgroundContentState extends State<BackgroundContent> {
               height: 16,
             ),
             Expanded(
-              flex: 1,
               child: ListView(
+                controller: ScrollController(),
+                physics: const AlwaysScrollableScrollPhysics(),
                 children: <Widget>[
                   _timelineStart(),
                   const MilestoneArticle(

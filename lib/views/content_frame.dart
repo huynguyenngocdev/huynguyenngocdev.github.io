@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:huy_resume/views/contents/content_awards.dart';
+import 'package:huy_resume/utils/page.dart';
+import 'package:huy_resume/views/contents/content_achievements.dart';
 import 'package:huy_resume/views/contents/content_background.dart';
 import 'package:huy_resume/views/contents/content_home.dart';
 import 'package:huy_resume/views/contents/content_skills.dart';
 
 class ContentFrame extends StatelessWidget {
-  const ContentFrame(this.contentId, {Key? key}) : super(key: key);
-  final int contentId;
-  Widget _defineContent(int contentId) {
-    switch (contentId) {
-      case 1:
+  const ContentFrame(this.pageSelected, {Key? key}) : super(key: key);
+  final PAGE pageSelected;
+  Widget _defineContent(PAGE pageSelected) {
+    switch (pageSelected) {
+      case PAGE.skills:
         return const SkillsContent();
-      case 2:
-        return const AwardsContent();
-      case 3:
+      case PAGE.achievements:
+        return const AchievementsContent();
+      case PAGE.education:
         return const BackgroundContent();
       default:
         return const HomeContent();
@@ -27,6 +28,6 @@ class ContentFrame extends StatelessWidget {
         transitionBuilder: (Widget child, Animation<double> animation) =>
             ScaleTransition(
                 scale: animation, child: child, alignment: Alignment.topCenter),
-        child: _defineContent(contentId));
+        child: _defineContent(pageSelected));
   }
 }

@@ -1,8 +1,21 @@
 // ignore_for_file: constant_identifier_names
 
-const Header_Title = "NGUYEN NGOC Huy";
-const Header_SubTitle = "FRESHER FLUTTER DEVELOPER";
+import 'package:flutter/material.dart';
+import 'package:huy_resume/app_icons.dart';
+import 'package:huy_resume/models/drawer_item_model.dart';
 
+import 'page.dart';
+
+/*  GENERAL SIZE */
+const DrawerWidth = 250.0;
+
+const MilestoneFixedIconSize = 60.0;
+/* GENEARAL SIZE */
+
+const HEADER_TITLE = "NGUYEN NGOC Huy";
+const HEADER_SUBTITLE = "FRESHER FLUTTER DEVELOPER";
+
+/* ABOUT */
 const Header_Link_1 = "https://www.facebook.com/nguyen.ngoc.huy.2k1";
 const Header_Link_2 = "https://github.com/huynguyenngocdev";
 const Header_Link_3 = "https://www.linkedin.com/in/nguyen-huy-591b01225";
@@ -16,8 +29,10 @@ const Contact_Info_Mobile = ["Mobile Number", ""];
 const About_Me_Title = "About";
 const About_Me_Desc =
     "As an enthusiastic, responsive, passionate, and goal-driven programmer, I am looking to apply my knowledge and want to learn and grow all of my abilities to meet every customer's needs. Furthermore, I usually update and follow the latest tech trends and stacks and attend seminars and meetups."
-    "\n\nI'm also open for side projects and finding a job, so if you need someone who has expertise in mobile/back-end development, or just basically gets in touch and chat, feels free to contact me with these social networks below.";
+    "\n\nI'm also looking for a job, so if you need someone who has expertise in mobile/back-end development, or just basically gets in touch and chat, feels free to contact me with these social networks below.";
+/* ABOUT */
 
+/* SKILLS */
 const Skills_Title = "SKILLS";
 const Skills_1 = ["Mobile", "Flutter/Dart, React Native"];
 const Skills_2 = ["Web", "HTML, CSS, ReactJS, Laravel, Flutter"];
@@ -26,13 +41,21 @@ const Skills_4 = [
   "Others",
   "Unit Test, Firebase, MongoDB, OOP, SOLID, Agile/Scrum"
 ];
+/* SKILLS */
 
-const DrawerWidth = 250.0;
+/* EDUCATION */
+const Education_Title = "EDUCATION";
+const Education_1 = [
+  "Passerelles numériques Vietnam - DanaVTC",
+  "Sep 2019  -  Oct 2022",
+  "Major: : Information Technology",
+  "GPA: 3.46/4"
+];
 
-const MilestoneFixedIconSize = 60.0;
+/* EDUCATION */
 
 /* MILESTONES */
-const Milestone_Title = "NEWS & ARTICLES";
+const Milestone_Title = "WORK EXPERIENCE";
 const mClinicaGoes1stFlutterPHEvent = [
   "mClinica goes to Flutter Philippines’ 1st ever study jam",
   "September 25, 2019",
@@ -51,11 +74,49 @@ const fdaToUseEDSS = [
 /* MILESTONES */
 
 /* ACHIEVEMENTS */
-const Awards_Title = "ACHIEVEMENTS";
+const Achivements_Title = "ACHIEVEMENTS";
 const startUpWheel = [
-  "In the top 100 of Startup Wheel 2022",
-  "July, 2022",
+  "Little Star - In the top 100 of Startup Wheel 2022",
+  "July, 2022 - Leader",
   "Little Star is an app to help children from 3 to 7 years old learn Vietnamese with listening - reading - speaking skills and watch good videos that have safe content and are useful for the growth of the child.\nRead the full story here."
 ];
 
 /* ACHIEVEMENTS */
+
+final List<DrawerItemModel> DRAWER_LIST = [
+  DrawerItemModel(
+    icon: AppIcons.person,
+    title: "About Me",
+    page: PAGE.about,
+  ),
+  DrawerItemModel(
+    icon: AppIcons.lightbulb_outline,
+    title: "Skills",
+    page: PAGE.skills,
+  ),
+  DrawerItemModel(
+    icon: Icons.menu_book_rounded,
+    title: "Education",
+    page: PAGE.education,
+  ),
+  DrawerItemModel(
+    icon: AppIcons.award,
+    title: "Achievements",
+    page: PAGE.achievements,
+  ),
+  DrawerItemModel(
+    icon: AppIcons.pin,
+    title: "Experience",
+    page: PAGE.experience,
+  ),
+  DrawerItemModel(
+    icon: AppIcons.star,
+    title: "Portfolio",
+    page: PAGE.portfolio,
+  ),
+  DrawerItemModel(
+    icon: Icons.person_search,
+    title: "Hiring Me",
+    page: PAGE.hire,
+  ),
+];

@@ -30,7 +30,7 @@ class DrawerTop extends StatelessWidget {
           ),
           const SizedBox(width: 0.0, height: 8.0),
           const Text(
-            Header_Title,
+            HEADER_TITLE,
             style: TextStyle(
                 fontSize: 24,
                 fontFamily: DINPro.medium,
@@ -39,7 +39,7 @@ class DrawerTop extends StatelessWidget {
           ),
           const SizedBox(width: 0.0, height: 8.0),
           const NormalText(
-            Header_SubTitle,
+            HEADER_SUBTITLE,
             color: WebColors.light,
             fontFamily: DINPro.light,
             isCenter: true,

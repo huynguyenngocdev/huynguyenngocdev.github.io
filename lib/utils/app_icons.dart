@@ -6,7 +6,6 @@ class AppIcons {
   AppIcons._();
 
   static const _kFontFam = 'AppIcons';
-  // static const _kFontMat = 'MaterialIcons';
 
   static const IconData devices_other = IconData(0xe800, fontFamily: _kFontFam);
   static const IconData phone_android = IconData(0xe801, fontFamily: _kFontFam);
@@ -26,5 +25,4 @@ class AppIcons {
   static const IconData pin = IconData(0xe80e, fontFamily: _kFontFam);
   static const IconData link = IconData(0xe80f, fontFamily: _kFontFam);
   static const IconData bitbucket = IconData(0xf171, fontFamily: _kFontFam);
-  // static const IconData gmail = IconData(0xe0be, fontFamily: _kFontMat);
 }

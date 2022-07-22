@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:huy_resume/app_icons.dart';
 import 'package:huy_resume/utils/constants.dart';
 import 'package:huy_resume/utils/default_colors.dart';
+import 'package:huy_resume/utils/page.dart';
 import 'package:huy_resume/views/content_frame.dart';
-import 'package:huy_resume/views/drawer/drawer_item.dart';
-import 'package:huy_resume/views/drawer/drawer_top.dart';
+import 'package:huy_resume/views/drawer/drawer_custom.dart';
 
 class WebPage extends StatefulWidget {
   const WebPage({Key? key}) : super(key: key);
@@ -14,11 +13,11 @@ class WebPage extends StatefulWidget {
 }
 
 class WebPageState extends State<WebPage> {
-  int selectedItem = 0;
+  PAGE pageSelected = PAGE.about;
 
-  _setStateItemId(int id) {
+  _setStateItemId(PAGE page) {
     setState(() {
-      selectedItem = id;
+      pageSelected = page;
     });
   }
 
@@ -30,53 +29,17 @@ class WebPageState extends State<WebPage> {
         mainAxisSize: MainAxisSize.max,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          // ListView
+          // Menu
           Container(
-            width: DrawerWidth,
-            height: MediaQuery.of(context).size.height,
-            color: WebColors.primary,
-            child: ListView(
-              children: <Widget>[
-                // Top Bar
-                const DrawerTop(),
-                DrawerItem(
-                  AppIcons.person,
-                  "About me",
-                  selectedItem == 0,
-                  onPressed: () {
-                    _setStateItemId(0);
-                  },
-                ),
-                DrawerItem(
-                  AppIcons.lightbulb_outline,
-                  "Skills",
-                  selectedItem == 1,
-                  onPressed: () {
-                    _setStateItemId(1);
-                  },
-                ),
-                DrawerItem(
-                  AppIcons.award,
-                  "Awards",
-                  selectedItem == 2,
-                  onPressed: () {
-                    _setStateItemId(2);
-                  },
-                ),
-                DrawerItem(
-                  AppIcons.pin,
-                  "News & Articles",
-                  selectedItem == 3,
-                  onPressed: () {
-                    _setStateItemId(3);
-                  },
-                ),
-              ],
-            ),
-          ),
+              width: DrawerWidth,
+              height: MediaQuery.of(context).size.height,
+              color: WebColors.primary,
+              child: DrawerCustom(
+                  onPressDrawerItem: _setStateItemId,
+                  pageSelected: pageSelected)),
           // Content
           Expanded(
-            child: ContentFrame(selectedItem),
+            child: ContentFrame(pageSelected),
           )
         ],
       ),

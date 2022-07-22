@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:huy_resume/app_icons.dart';
 import 'package:huy_resume/utils/default_colors.dart';
 import 'package:huy_resume/utils/dipro_font.dart';
+import 'package:huy_resume/utils/page.dart';
 import 'package:huy_resume/views/content_frame.dart';
-import 'package:huy_resume/views/drawer/drawer_item.dart';
-import 'package:huy_resume/views/drawer/drawer_top.dart';
+import 'package:huy_resume/views/drawer/drawer_custom.dart';
 import 'package:huy_resume/views/text_defaults/text_normal.dart';
 
 class MobilePage extends StatefulWidget {
@@ -15,12 +14,12 @@ class MobilePage extends StatefulWidget {
 }
 
 class MobilePageState extends State<MobilePage> {
-  int selectedItem = 0;
+  PAGE pageSelected = PAGE.about;
 
-  _setStateItemId(int id) {
+  _setStateItemId(PAGE page) {
     Navigator.pop(context);
     setState(() {
-      selectedItem = id;
+      pageSelected = page;
     });
   }
 
@@ -37,48 +36,12 @@ class MobilePageState extends State<MobilePage> {
       backgroundColor: Colors.white,
       drawer: Drawer(
         child: Container(
-          color: WebColors.primary,
-          child: ListView(
-            children: <Widget>[
-              // Top Bar
-              const DrawerTop(),
-              DrawerItem(
-                AppIcons.person,
-                "About",
-                selectedItem == 0,
-                onPressed: () {
-                  _setStateItemId(0);
-                },
-              ),
-              DrawerItem(
-                AppIcons.lightbulb_outline,
-                "Skills",
-                selectedItem == 1,
-                onPressed: () {
-                  _setStateItemId(1);
-                },
-              ),
-              DrawerItem(
-                AppIcons.pin,
-                "News & Articles",
-                selectedItem == 3,
-                onPressed: () {
-                  _setStateItemId(3);
-                },
-              ),
-              DrawerItem(
-                AppIcons.award,
-                "Achievements",
-                selectedItem == 2,
-                onPressed: () {
-                  _setStateItemId(2);
-                },
-              ),
-            ],
-          ),
-        ),
+            color: WebColors.primary,
+            child: DrawerCustom(
+                onPressDrawerItem: _setStateItemId,
+                pageSelected: pageSelected)),
       ),
-      body: ContentFrame(selectedItem),
+      body: ContentFrame(pageSelected),
     );
   }
 }

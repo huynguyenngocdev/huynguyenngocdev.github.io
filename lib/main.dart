@@ -16,7 +16,7 @@ class WebApp extends StatelessWidget {
         theme: ThemeData(
             primaryColor: WebColors.primary,
             appBarTheme: const AppBarTheme(color: WebColors.primary)),
-        // home: WebPage(),
+        debugShowCheckedModeBanner: false,
         home: const ResponsiveLayout(
           largeScreen: WebPage(),
           mediumScreen: MobilePage(),
