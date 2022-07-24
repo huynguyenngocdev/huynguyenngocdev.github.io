@@ -5,8 +5,8 @@ import 'package:huy_resume/utils/text_defaults/text_normal.dart';
 import 'package:huy_resume/views/widgets/buttons/button_list.dart';
 import 'package:huy_resume/views/widgets/contents/milestones/milestone_base.dart';
 
-class MilestoneNews extends StatelessWidget {
-  const MilestoneNews(this.value, {Key? key, required this.buttons})
+class MilestoneProjects extends StatelessWidget {
+  const MilestoneProjects(this.value, {Key? key, required this.buttons})
       : super(key: key);
 
   final List value;
@@ -15,7 +15,7 @@ class MilestoneNews extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MilestoneBase(
-      AppIcons.article_alt,
+      AppIcons.cogs,
       value,
       content: Column(
         mainAxisSize: MainAxisSize.min,

@@ -3,19 +3,19 @@ import 'package:huy_resume/utils/app_icons.dart';
 import 'package:huy_resume/utils/constants.dart';
 import 'package:huy_resume/utils/default_colors.dart';
 import 'package:huy_resume/utils/text_defaults/text_page_title.dart';
-import 'package:huy_resume/views/widgets/contents/milestones/milestone_article.dart';
+import 'package:huy_resume/views/widgets/contents/milestones/milestone_projects.dart';
 import 'package:huy_resume/views/widgets/timeline/timeline_end.dart';
 import 'package:huy_resume/views/widgets/timeline/timeline_start.dart';
 import 'package:tuple/tuple.dart';
 
-class EducationContent extends StatefulWidget {
-  const EducationContent({Key? key}) : super(key: key);
+class PortfolioContent extends StatefulWidget {
+  const PortfolioContent({Key? key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => EducationContentState();
+  State<StatefulWidget> createState() => PortfolioContentState();
 }
 
-class EducationContentState extends State<EducationContent> {
+class PortfolioContentState extends State<PortfolioContent> {
   late final Size size;
   @override
   void didChangeDependencies() {
@@ -33,7 +33,7 @@ class EducationContentState extends State<EducationContent> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            const PageTitleText(Education_Title),
+            const PageTitleText(Portfolio_Title),
             const SizedBox(
               height: 16,
             ),
@@ -43,11 +43,18 @@ class EducationContentState extends State<EducationContent> {
                 physics: const AlwaysScrollableScrollPhysics(),
                 children: const <Widget>[
                   TimelineStart(),
-                  MilestoneArticle(
-                    Education_1,
+                  MilestoneProjects(
+                    pLittleStar,
                     buttons: [
-                      Tuple2(AppIcons.link,
-                          "https://www.passerellesnumeriques.org/"),
+                      Tuple2(AppIcons.link, LinkProjectLittleStar),
+                    ],
+                  ),
+                  MilestoneProjects(
+                    pTotoroMilkTea,
+                    buttons: [
+                      Tuple2(AppIcons.link, LinkTotoroMilkTeaWeb),
+                      Tuple2(AppIcons.link, LinkTMTSourceWeb),
+                      Tuple2(AppIcons.link, LinkTMTSourceAPI),
                     ],
                   ),
                   TimelineEnd(),

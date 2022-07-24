@@ -23,7 +23,7 @@ const Contact_Info_Mobile = ["Mobile Number", ""];
 const About_Me_Title = "About";
 const About_Me_Desc =
     "As an enthusiastic, responsive, passionate, and goal-driven programmer, I am looking to apply my knowledge and want to learn and grow all of my abilities to meet every customer's needs. Furthermore, I usually update and follow the latest tech trends and stacks and attend seminars and meetups."
-    "\n\nI'm also looking for a job, so if you need someone who has expertise in mobile/back-end development, or just basically gets in touch and chat, feels free to contact me with these social networks below.";
+    "\n\nI'm also looking for a job, so if you need someone who has expertise in mobile/back-end development, or just basically gets in touch and chat, feels free to contact me with these social networks or watch my resume below.";
 /* ABOUT */
 
 /* SKILLS */
@@ -47,24 +47,35 @@ const Education_1 = [
 
 /* EDUCATION */
 
-/* MILESTONES */
-const Milestone_Title = "WORK EXPERIENCE";
-const mClinicaGoes1stFlutterPHEvent = [
-  "mClinica goes to Flutter Philippines’ 1st ever study jam",
-  "September 25, 2019",
-  "A Medium article I wrote for Flutter Philippines's 1st study jam for its upcoming hackathon event. Read all the details here."
+/* EXPERIENCE */
+const Experience_Title = "WORK EXPERIENCE";
+
+const wInCES = [
+  "Code Engine Studio",
+  "July 12, 2021 - September 3, 2021 (Back-End NodeJS Developer - Full time Intern)",
+  "We made a project about a virtual classroom application (with an idea from Google Classroom)."
+      "\n Main responsibilities:"
+      "\n - Created and developed API with Node.js and MongoDB"
+      "\n - Develop function “Login with Google”"
+      "\n - Writing the API documentation"
+      "\n - Develop function “Upload files to Google Drive”"
+      "\n\n Link project here: "
 ];
-const digitalLogbookEDSS = [
-  "With mobile app, pharmacy logbooks to go digital by 2020",
-  "November 4, 2018",
-  "A news article from Rappler explaining the positive effects of implementing a digitized prescription platform here in Philippines. To know more, read this article below."
+const LinkProject_CES = "https://pnv-ces-classwork.herokuapp.com/docs/";
+
+const wInUmbala = [
+  "Umbala Metaverse Company",
+  "April 4, 2022 - August, 28, 2022 (Front-End Web & Mobile Developer - Full time intern)",
+  "\n Main responsibilities:"
+      "\n - Developed the mobile version of the website http://umbala.io/"
+      "\n - Participated in mobile app development (company internal project) using Flutter"
+      "\n - Developed feature login with MetaMask and get the wallet address"
+      "\n Developed feature login with MetaMask and get the wallet address"
+      "\n - Learned more about OOP, SOLID, Software Architecture(MVC, MVP, MVVM, Clean Architecture), and Design Pattern"
+      "\n - Improved the ability to use Flutter ( call API with Retrofit, state management with Provider and BLoC, use DI, deep-link, write unit test,...)"
+      "\n - Improved teamwork and Agile Scrum skills"
 ];
-const fdaToUseEDSS = [
-  "FDA to use mClinica app to monitor prescriptions",
-  "October 11, 2018",
-  "A news article from BusinessWorld about the partnership of mClinica and FDA (Food and Drug Administration) of implementing a mobile app named, eDSS (Electronic Drug Safety System). Read all about it here."
-];
-/* MILESTONES */
+/* EXPERIENCE */
 
 /* ACHIEVEMENTS */
 const Achivements_Title = "ACHIEVEMENTS";
@@ -73,8 +84,39 @@ const startUpWheel = [
   "July, 2022 - Leader",
   "Little Star is an app to help children from 3 to 7 years old learn Vietnamese with listening - reading - speaking skills and watch good videos that have safe content and are useful for the growth of the child.\nRead the full story here."
 ];
-
 /* ACHIEVEMENTS */
+
+/* PORTFOLIO */
+const Portfolio_Title = "PORTFOLIO";
+
+const pLittleStar = [
+  "Little Star Application (Graduation Project)",
+  "November, 2021 - March, 2022 (Leader - Flutter Mobile Developer)",
+  "Little Star is an app to help children from 3 to 7 years old learn Vietnamese with listening - reading - speaking skills and watch good videos that have safe content and are useful for the growth of the child."
+      "\n Main responsibilities:"
+      "\n - Made a plan, wrote Business Model Canvas, made the slide, and reports"
+      "\n - Developed the Flutter mobile app  for kids to practice listening, reading, and speaking skills and a dashboard for parents to check lessons history, time using the app, videos that kids watched"
+      "\n - Apply Scrum, manage tasks and progress of team members, held meetings with mentors, and support team members"
+      "\n Recognition and Gains:"
+      '\n - Top 1 in the "Moment of Trust" contest in Passerelles numériques Vietnam'
+      "\n - In the top 100 of Startup Wheel 2022"
+];
+const LinkProjectLittleStar = "http://little-star-web.herokuapp.com/";
+
+const pTotoroMilkTea = [
+  "Totoro Milk Tea Website",
+  "MAY 2021 - JUN 2021 (Team Leader & Full-Stack Developer)",
+  " Main responsibilities:"
+      "\n - Assigned tasks to team members"
+      "\n - Designed and developed user interface and functions (add to card, upload images, show ads sale off,...) with ReactJS"
+      "\n - Developed RESTful API and protecting it by JWT with NodeJS"
+      "\n - Handle images in API (convert from base64 to images)"
+];
+const LinkTotoroMilkTeaWeb = "http://totoromilktea.herokuapp.com";
+const LinkTMTSourceWeb = "https://github.com/huynguyenngocdev/TotoroMilkTea";
+const LinkTMTSourceAPI = "https://github.com/huynguyenngocdev/TotoroMilkTeaAPI";
+
+/* PORTFOLIO */
 
 final List<DrawerItemModel> DRAWER_LIST = [
   DrawerItemModel(
