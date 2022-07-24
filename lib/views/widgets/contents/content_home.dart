@@ -109,8 +109,8 @@ class HomeContentState extends State<HomeContent> {
               const BigText(HEADER_TITLE),
               const NormalText(About_Me_Desc),
               const SizedBox(width: 0.0, height: 16.0),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
+              Wrap(
+                alignment: WrapAlignment.center,
                 children: <Widget>[
                   _decoratedIcon(0, AppIcons.facebook_1, Colors.white,
                       Colors.blue, Header_Link_1), // Facebook
@@ -120,7 +120,7 @@ class HomeContentState extends State<HomeContent> {
                       Colors.white, Header_Link_3), // LinkedIn
                   _decoratedIcon(3, Icons.mail, Colors.red, Colors.white,
                       Header_Link_4), // Gmail
-                  _openResumeBtn(4, "/resume/[CV]Nguyen_Ngoc_Huy.pdf"), // Gmail
+                  _openResumeBtn(4, "/resume/[CV]Nguyen_Ngoc_Huy.pdf"), // CV
                 ],
               ),
             ],
