@@ -57,6 +57,12 @@ class PortfolioContentState extends State<PortfolioContent> {
                       Tuple2(AppIcons.link, LinkTMTSourceAPI),
                     ],
                   ),
+                  MilestoneProjects(
+                    pPNVWeb,
+                    buttons: [
+                      Tuple2(AppIcons.link, LinkPNVWeb),
+                    ],
+                  ),
                   TimelineEnd(),
                 ],
               ),

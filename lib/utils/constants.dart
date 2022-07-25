@@ -105,7 +105,7 @@ const LinkProjectLittleStar = "http://little-star-web.herokuapp.com/";
 
 const pTotoroMilkTea = [
   "Totoro Milk Tea Website",
-  "MAY 2021 - JUN 2021 (Team Leader & Full-Stack Developer)",
+  "May 2021 - June 2021 (Team Leader & Full-Stack Developer)",
   " Main responsibilities:"
       "\n - Assigned tasks to team members"
       "\n - Designed and developed user interface and functions (add to card, upload images, show ads sale off,...) with ReactJS"
@@ -115,6 +115,36 @@ const pTotoroMilkTea = [
 const LinkTotoroMilkTeaWeb = "http://totoromilktea.herokuapp.com";
 const LinkTMTSourceWeb = "https://github.com/huynguyenngocdev/TotoroMilkTea";
 const LinkTMTSourceAPI = "https://github.com/huynguyenngocdev/TotoroMilkTeaAPI";
+
+const pPNVWeb = [
+  "Rebuild Passerelles numériques Vietnam(PNV)",
+  "June 2021 - July 2021 (Team Leader & Full-Stack Developer)",
+  'This is a project for the "Rebuild the landing page PNV" contest.'
+      ' Of course, our website is a FAKE page, it is only used for demonstration when presenting.'
+      ' (REAL PAGE of PNV is here: https://www.passerellesnumeriques.org/)'
+      " Main responsibilities:"
+      "\n - Management and assigned tasks to team members"
+      "\n - Developed landing page with ReactJS: "
+      "\n   + Implement UI"
+      "\n   + Implement API"
+      "\n   + Add Facebook messenger customer chat function"
+      "\n   + Add Facebook messenger customer chat function"
+      "\n   + Handled send email function"
+      "\n   + Handled routes"
+      "\n   + Handled upload image to API"
+      "\n   + Created animation the numbers run when scrolled to"
+      "\n   + Review and merge code for team members"
+      "\n - Developed API with Laravel:"
+      "\n   + Created function upload images to 'imgbb.com'"
+      "\n   + Protecting API by Passport"
+      "\n   + Handled API endpoint and middleware"
+      "\n   + Analyzed and created the database"
+      "\n   + Set up for migration the database"
+      "\n   + Created controller to CRUD the database and return JSON when API called"
+      "\n   + Deploy to serve"
+];
+const LinkPNVWeb =
+    "https://pnv22web-passerellesnumeriques-robusta.netlify.app/";
 
 /* PORTFOLIO */
 
