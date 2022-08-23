@@ -7,7 +7,7 @@ import 'package:huy_resume/utils/app_icons.dart';
 import 'page.dart';
 
 const HEADER_TITLE = "NGUYEN NGOC Huy";
-const HEADER_SUBTITLE = "FRESHER FLUTTER DEVELOPER";
+const HEADER_SUBTITLE = "FRESHER MOBILE DEVELOPER\n(Flutter/React Native)";
 
 /* ABOUT */
 const Header_Link_1 = "https://www.facebook.com/nguyen.ngoc.huy.2k1";
@@ -70,7 +70,8 @@ const wInUmbala = [
       "\n - Developed the mobile version of the website http://umbala.io/"
       "\n - Participated in mobile app development (company internal project) using Flutter"
       "\n - Developed feature login with MetaMask and get the wallet address"
-      "\n Developed feature login with MetaMask and get the wallet address"
+      "\n - Developed feature take a photo and save to mobile phone's storage"
+      "\n Achievements and skills gained:"
       "\n - Learned more about OOP, SOLID, Software Architecture(MVC, MVP, MVVM, Clean Architecture), and Design Pattern"
       "\n - Improved the ability to use Flutter ( call API with Retrofit, state management with Provider and BLoC, use DI, deep-link, write unit test,...)"
       "\n - Improved teamwork and Agile Scrum skills"
