@@ -42,7 +42,7 @@ const Education_Title = "EDUCATION";
 const Education_1 = [
   "Passerelles numériques Vietnam - DanaVTC",
   "Sep 2019  -  Oct 2022",
-  "Major: : Information Technology\nGPA: 3.46/4"
+  "Major: : Information Technology\nGPA: 3.8/4"
 ];
 
 /* EDUCATION */
