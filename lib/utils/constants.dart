@@ -7,7 +7,7 @@ import 'package:huy_resume/utils/app_icons.dart';
 import 'page.dart';
 
 const HEADER_TITLE = "NGUYEN NGOC Huy";
-const HEADER_SUBTITLE = "FRESHER MOBILE DEVELOPER\n(Flutter/React Native)";
+const HEADER_SUBTITLE = "FRESHER MOBILE DEVELOPER\n(Flutter/RN/Swift)";
 
 /* ABOUT */
 const Header_Link_1 = "https://www.facebook.com/nguyen.ngoc.huy.2k1";
@@ -18,7 +18,7 @@ const Header_Link_4 = "mailto:huynguyenngoc.dev@gmail.com";
 const Contact_Info_Title = "Contact Information";
 const Contact_Info_Location = ["Location", "Danang, Vietnam"];
 const Contact_Info_Email = ["Email", "huynguyenngoc.dev@gmail.com"];
-const Contact_Info_Mobile = ["Mobile Number", ""];
+const Contact_Info_Mobile = ["Mobile Number", "0355621838"];
 
 const About_Me_Title = "About";
 const About_Me_Desc =
@@ -28,12 +28,18 @@ const About_Me_Desc =
 
 /* SKILLS */
 const Skills_Title = "SKILLS";
-const Skills_1 = ["Mobile", "Flutter/Dart, React Native"];
+const Skills_1 = [
+  "Mobile",
+  "Flutter/Dart, React Native",
+  "Swift",
+  "Kotlin(Jetpack Compose)"
+];
 const Skills_2 = ["Web", "HTML, CSS, ReactJS, Laravel, Flutter"];
 const Skills_3 = ["Automation test", "Cypress, WebdriverIO"];
 const Skills_4 = [
   "Others",
-  "Unit Test, Firebase, MongoDB, OOP, SOLID, Agile/Scrum"
+  "Unit Test, Firebase, MongoDB, OOP, SOLID, Agile/Scrum",
+  "Clean Architecture"
 ];
 /* SKILLS */
 
@@ -52,7 +58,7 @@ const Experience_Title = "WORK EXPERIENCE";
 
 const wInCES = [
   "Code Engine Studio",
-  "July 12, 2021 - September 3, 2021 (Back-End NodeJS Developer - Full time Intern)",
+  "July, 2021 - September, 2021 (Back-End NodeJS Developer - Full time Intern)",
   "We made a project about a virtual classroom application (with an idea from Google Classroom)."
       "\n Main responsibilities:"
       "\n - Created and developed API with Node.js and MongoDB"
@@ -65,7 +71,7 @@ const LinkProject_CES = "https://pnv-ces-classwork.herokuapp.com/docs/";
 
 const wInUmbala = [
   "Umbala Metaverse Company",
-  "April 4, 2022 - August, 28, 2022 (Front-End Web & Mobile Developer - Full time intern)",
+  "April, 2022 - August, 2022 (Front-End Web & Mobile Developer - Full time intern)",
   "\n Main responsibilities:"
       "\n - Developed the mobile version of the website http://umbala.io/"
       "\n - Participated in mobile app development (company internal project) using Flutter"
@@ -89,6 +95,19 @@ const startUpWheel = [
 
 /* PORTFOLIO */
 const Portfolio_Title = "PORTFOLIO";
+
+const pFlutterBoilerplate = [
+  "Flutter Boilerplate",
+  "6 - 11, October 2022 (Mobile Developer)",
+  "A Flutter Boilerplate follows the clean architecture and makes it easy scalable with a modularization approach."
+      "\n Main responsibilities:"
+      "\n - Setup environment dev, staging and product for boilerplate"
+      "\n - Created the code base following the clean architecture and used BloC for state management"
+      "\n - Write a document for boilerplate and how to apply Clean Architecture"
+      "\n - Created an example"
+];
+const LinkProjectFlutterBoilerplate =
+    "https://github.com/digitalfortress-dev/flutter-boilerplate";
 
 const pLittleStar = [
   "Little Star Application (Graduation Project)",
