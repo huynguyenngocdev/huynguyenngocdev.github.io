@@ -44,6 +44,10 @@ class ExperienceContentState extends State<ExperienceContent> {
                 children: const <Widget>[
                   TimelineStart(),
                   MilestoneJob(
+                    wInDF,
+                    buttons: [],
+                  ),
+                  MilestoneJob(
                     wInUmbala,
                     buttons: [],
                   ),

@@ -24,24 +24,18 @@ const About_Me_Title = "About";
 const About_Me_Desc =
     "As an enthusiastic, responsive, passionate, and goal-driven programmer, I am looking to apply my knowledge and want to learn and grow all of my abilities to meet every customer's needs. Furthermore, I usually update and follow the latest tech trends and stacks and attend seminars and meetups."
     "\n\nI'm also looking for a job, so if you need someone who has expertise in mobile/back-end development, or just basically gets in touch and chat, feels free to contact me with these social networks or watch my resume below.";
-/* ABOUT */
+/* END ABOUT */
 
 /* SKILLS */
 const Skills_Title = "SKILLS";
-const Skills_1 = [
-  "Mobile",
-  "Flutter/Dart, React Native",
-  "Swift",
-  "Kotlin(Jetpack Compose)"
-];
+const Skills_1 = ["Mobile", "Flutter/Dart, UIKit, SwiftUI, React Native"];
 const Skills_2 = ["Web", "HTML, CSS, ReactJS, Laravel, Flutter"];
 const Skills_3 = ["Automation test", "Cypress, WebdriverIO"];
 const Skills_4 = [
   "Others",
-  "Unit Test, Firebase, MongoDB, OOP, SOLID, Agile/Scrum",
-  "Clean Architecture"
+  "Unit Test, Firebase, MongoDB, OOP, SOLID, Agile/Scrum, Clean Architecture"
 ];
-/* SKILLS */
+/* END SKILLS */
 
 /* EDUCATION */
 const Education_Title = "EDUCATION";
@@ -51,7 +45,7 @@ const Education_1 = [
   "Major: : Information Technology\nGPA: 3.8/4"
 ];
 
-/* EDUCATION */
+/* END EDUCATION */
 
 /* EXPERIENCE */
 const Experience_Title = "WORK EXPERIENCE";
@@ -82,7 +76,23 @@ const wInUmbala = [
       "\n - Improved the ability to use Flutter ( call API with Retrofit, state management with Provider and BLoC, use DI, deep-link, write unit test,...)"
       "\n - Improved teamwork and Agile Scrum skills"
 ];
-/* EXPERIENCE */
+
+const wInDF = [
+  "Digital Fortress Company",
+  "September, 2022 - Present (Mobile Developer)",
+  "\n Main responsibilities:"
+      "\n - Built a Flutter codebase that follows the clean architecture and made it scalable with a modularization approach (https://github.com/digitalfortress-dev/flutter-boilerplate)"
+      "\n - Developed an app to control smart devices (ESP32) by TCP Socket and AWS by Swift (UIkit)"
+      "\n - Developed an app to control smart devices by Matter with SwiftUI"
+      "\n - Joined in the process developed the product of the company by SwiftUI with Swift Package Module"
+      "\n - Helped other members get started with SwiftUI and Flutter Boilerplate"
+      "\n Achievements and skills gained:"
+      "\n - Learned Swift language and Swift Package Module"
+      "\n - Understood more MQTT and used the AWS services(Cognito, Alexa,...)"
+      "\n - Improved English skills when meeting 1-1 with client"
+];
+
+/* END EXPERIENCE */
 
 /* ACHIEVEMENTS */
 const Achivements_Title = "ACHIEVEMENTS";
@@ -91,7 +101,7 @@ const startUpWheel = [
   "July, 2022 - Leader",
   "Little Star is an app to help children from 3 to 7 years old learn Vietnamese with listening - reading - speaking skills and watch good videos that have safe content and are useful for the growth of the child.\nRead the full story here."
 ];
-/* ACHIEVEMENTS */
+/* END ACHIEVEMENTS */
 
 /* PORTFOLIO */
 const Portfolio_Title = "PORTFOLIO";
@@ -166,7 +176,7 @@ const pPNVWeb = [
 const LinkPNVWeb =
     "https://pnv22web-passerellesnumeriques-robusta.netlify.app/";
 
-/* PORTFOLIO */
+/* END PORTFOLIO */
 
 final List<DrawerItemModel> DRAWER_LIST = [
   DrawerItemModel(
