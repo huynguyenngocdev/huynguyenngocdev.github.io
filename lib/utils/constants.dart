@@ -67,7 +67,7 @@ const wInUmbala = [
   "Umbala Metaverse Company",
   "April, 2022 - August, 2022 (Front-End Web & Mobile Developer - Full time intern)",
   "\n Main responsibilities:"
-      "\n - Developed the mobile version of the website http://umbala.io/"
+      "\n - Developed the mobile version for the landing page of company"
       "\n - Participated in mobile app development (company internal project) using Flutter"
       "\n - Developed feature login with MetaMask and get the wallet address"
       "\n - Developed feature take a photo and save to mobile phone's storage"
@@ -81,16 +81,19 @@ const wInDF = [
   "Digital Fortress Company",
   "September, 2022 - Present (Mobile Developer)",
   "\n Main responsibilities:"
-      "\n - Built a Flutter codebase that follows the clean architecture and made it scalable with a modularization approach (https://github.com/digitalfortress-dev/flutter-boilerplate)"
+      "\n - Built a Flutter codebase that follows the clean architecture and made it scalable with a modularization approach"
       "\n - Developed an app to control smart devices (ESP32) by TCP Socket and AWS by Swift (UIkit)"
-      "\n - Developed an app to control smart devices by Matter with SwiftUI"
-      "\n - Joined in the process developed the product of the company by SwiftUI with Swift Package Module"
+      "\n - Developed the app by SwiftUI and modular project structure with Swift Package Manager (SPM)"
       "\n - Helped other members get started with SwiftUI and Flutter Boilerplate"
       "\n Achievements and skills gained:"
-      "\n - Learned Swift language and Swift Package Module"
+      "\n - Learned Swift language and Modular Project Structure with (SPM)"
       "\n - Understood more MQTT and used the AWS services(Cognito, Alexa,...)"
       "\n - Improved English skills when meeting 1-1 with client"
+      "\n"
 ];
+
+const LinkProject_DF =
+    "https://github.com/digitalfortress-dev/flutter-boilerplate";
 
 /* END EXPERIENCE */
 

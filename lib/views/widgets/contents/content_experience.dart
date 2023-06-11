@@ -45,7 +45,7 @@ class ExperienceContentState extends State<ExperienceContent> {
                   TimelineStart(),
                   MilestoneJob(
                     wInDF,
-                    buttons: [],
+                    buttons: [Tuple2(AppIcons.link, LinkProject_DF)],
                   ),
                   MilestoneJob(
                     wInUmbala,
