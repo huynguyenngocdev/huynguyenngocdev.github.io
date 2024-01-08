@@ -46,12 +46,12 @@ class MilestoneBase extends StatelessWidget {
               margin: const EdgeInsets.all(5.0),
               height: MilestoneFixedIconSize,
               width: MilestoneFixedIconSize,
+              decoration: const BoxDecoration(
+                  shape: BoxShape.circle, color: WebColors.darkPrimary),
               child: Icon(
                 icon,
                 color: WebColors.light,
               ),
-              decoration: const BoxDecoration(
-                  shape: BoxShape.circle, color: WebColors.darkPrimary),
             ),
           ),
         )

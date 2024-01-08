@@ -33,7 +33,7 @@ class ContentFrame extends StatelessWidget {
         duration: const Duration(milliseconds: 350),
         transitionBuilder: (Widget child, Animation<double> animation) =>
             ScaleTransition(
-                scale: animation, child: child, alignment: Alignment.topCenter),
+                scale: animation, alignment: Alignment.topCenter, child: child),
         child: _defineContent(pageSelected));
   }
 }

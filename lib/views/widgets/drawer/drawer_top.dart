@@ -11,6 +11,9 @@ class DrawerTop extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 10),
+      decoration: const BoxDecoration(
+        color: WebColors.primary,
+      ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -45,9 +48,6 @@ class DrawerTop extends StatelessWidget {
             isCenter: true,
           ),
         ],
-      ),
-      decoration: const BoxDecoration(
-        color: WebColors.primary,
       ),
     );
   }
