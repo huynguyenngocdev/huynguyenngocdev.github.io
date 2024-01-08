@@ -81,9 +81,12 @@ const wInDF = [
   "Digital Fortress Company",
   "September, 2022 - Present (Mobile Developer)",
   "\n Main responsibilities:"
+      "\n - Responsible for and developing the entire app(built infrastructure, built UI/UX, developed all features, published to App Store) to control and manage smart devices by Matter protocol with SwiftUI and Objective-C"
+      "\n - Worked as a Scum Master to manage the project and team members"
+      "\n - Research, understand, and test the implementation of new IoT technologies"
+      "\n - Developed an app to manage and control smart devices (ESP32) by BLE, TCP Socket, and WebSocket with Swift (UIkit), using Amazon Cognito to make identity provider and Amazon S3 to manage images"
+      "\n - Joined in the process of developing the product of the company by SwiftUI with Swift Package Module, using Google Maps and MapKit to optimize map display, pick locations, and recommend locations"
       "\n - Built a Flutter codebase that follows the clean architecture and made it scalable with a modularization approach"
-      "\n - Developed an app to control smart devices (ESP32) by TCP Socket and AWS by Swift (UIkit)"
-      "\n - Developed the app by SwiftUI and modular project structure with Swift Package Manager (SPM)"
       "\n - Helped other members get started with SwiftUI and Flutter Boilerplate"
       "\n Achievements and skills gained:"
       "\n - Learned Swift language and Modular Project Structure with (SPM)"
