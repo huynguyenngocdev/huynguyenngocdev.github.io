@@ -7,7 +7,7 @@ import 'package:huy_resume/utils/app_icons.dart';
 import 'page.dart';
 
 const HEADER_TITLE = "NGUYEN NGOC Huy";
-const HEADER_SUBTITLE = "FRESHER MOBILE DEVELOPER\n(Flutter/RN/Swift)";
+const HEADER_SUBTITLE = "MOBILE DEVELOPER\n(Flutter/RN/Swift)";
 
 /* ABOUT */
 const Header_Link_1 = "https://www.facebook.com/nguyen.ngoc.huy.2k1";
