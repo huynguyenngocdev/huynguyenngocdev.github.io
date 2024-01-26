@@ -62663,7 +62663,7 @@ s.toString
 A.W9(s).Js(null)
 this.au(new A.VC(this,a))},
 K(a){var s=null,r=this.d
-return A.adh(new A.qd(B.Eo,new A.KF(s,s,1/0,56),s),B.i,new A.qF(r,s),new A.B5(A.bk(s,new A.r5(this.gX3(),r,s),B.bH,s,s,s,s,s),s))}}
+return A.adh(new A.qd(B.En,new A.KF(s,s,1/0,56),s),B.i,new A.qF(r,s),new A.B5(A.bk(s,new A.r5(this.gX3(),r,s),B.bH,s,s,s,s,s),s))}}
 A.VC.prototype={
 $0(){this.a.d=this.b},
 $S:0}
@@ -62735,11 +62735,11 @@ A.C7.prototype={
 pn(a,b,c,d,e){var s=null,r=this.d[a],q=r?c:B.fg,p=A.qk(20)
 return A.a96(A.bk(s,A.PI(A.Um(!1,p,!0,A.rL(b,r?d:B.R,s,s),s,!0,s,s,s,s,s,s,s,new A.Tv(this,a),s,new A.Tw(e),s,s,s,s),s,s),s,new A.ct(q,s,s,s,s,s,B.ce),40,B.fv,s,40),e)},
 Vr(a,b){var s=null,r=this.d[a]?B.DR:B.fg,q=A.qk(25)
-return A.bk(s,A.Um(!1,A.qk(20),!0,B.Em,s,!0,s,s,s,s,s,s,s,new A.Ty(this,a),s,new A.Tz(b),s,s,s,s),s,new A.ct(r,s,s,q,s,s,B.at),40,B.fv,B.yV,s)},
+return A.bk(s,A.Um(!1,A.qk(20),!0,B.El,s,!0,s,s,s,s,s,s,s,new A.Ty(this,a),s,new A.Tz(b),s,s,s,s),s,new A.ct(r,s,s,q,s,s,B.at),40,B.fv,B.yV,s)},
 K(a){var s,r=this,q=null,p=t.w,o=A.bl(a,q,p).w
 p=A.bl(a,q,p).w.a.a>1200?B.a6:B.bb
 s=t.p
-return A.bk(q,new A.FA(new A.f2(B.yY,A.eR(A.a([A.bk(q,q,q,B.w_,240,q,q,240),B.Hq,B.vJ,B.En,B.Hp,A.ae7(B.N1,A.a([r.pn(0,B.zu,B.i,B.bR,"https://www.facebook.com/nguyen.ngoc.huy.2k1"),r.pn(1,B.zv,B.i,B.k,"https://github.com/huynguyenngocdev"),r.pn(2,B.zs,B.bR,B.i,"https://www.linkedin.com/in/nguyen-huy-591b01225"),r.pn(3,B.zn,B.DS,B.i,"mailto:huynguyenngoc.dev@gmail.com"),r.Vr(4,"/resume/[CV]Nguyen_Ngoc_Huy.pdf")],s),0,0)],s),p,B.h9,B.a4),q),q),B.R,q,o.a.b,q,q,q)}}
+return A.bk(q,new A.FA(new A.f2(B.yY,A.eR(A.a([A.bk(q,q,q,B.w_,240,q,q,240),B.Hq,B.vJ,B.Em,B.Hp,A.ae7(B.N1,A.a([r.pn(0,B.zu,B.i,B.bR,"https://www.facebook.com/nguyen.ngoc.huy.2k1"),r.pn(1,B.zv,B.i,B.k,"https://github.com/huynguyenngocdev"),r.pn(2,B.zs,B.bR,B.i,"https://www.linkedin.com/in/nguyen-huy-591b01225"),r.pn(3,B.zn,B.DS,B.i,"mailto:huynguyenngoc.dev@gmail.com"),r.Vr(4,"/resume/[CV]Nguyen_Ngoc_Huy.pdf")],s),0,0)],s),p,B.h9,B.a4),q),q),B.R,q,o.a.b,q,q,q)}}
 A.Tv.prototype={
 $1(a){var s=this.a
 s.au(new A.Tu(s,this.b,a))},
@@ -62828,7 +62828,7 @@ $0(){return this.a.f.$0()},
 $S:0}
 A.B9.prototype={
 K(a){var s=null
-return A.bk(s,A.eR(A.a([A.bk(s,s,s,B.vY,100,s,s,100),B.uL,B.LK,B.uL,B.El],t.p),B.bb,B.h9,B.a4),s,B.vX,s,s,B.yS,s)}}
+return A.bk(s,A.eR(A.a([A.bk(s,s,s,B.vY,100,s,s,100),B.uL,B.LK,B.uL,B.Eo],t.p),B.bb,B.h9,B.a4),s,B.vX,s,s,B.yS,s)}}
 A.vw.prototype={
 ak(){return new A.Mq(B.j)}}
 A.Mq.prototype={
@@ -66714,10 +66714,10 @@ B.Eg=new A.tC(null,null,null,null,null,null,null,null,null,null)
 B.Eh=new A.tD(null,null,null,null,null,null,null,null,null,null)
 B.hd=new A.W4(0,"traditional")
 B.Ei=new A.tE(null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.El=new A.jS("FRESHER MOBILE DEVELOPER\n(Flutter/RN/Swift)",null,B.R,"DINPro Light",!0,null)
-B.Em=new A.jS("Resume",null,B.R,"DINPro Bold",!1,null)
-B.En=new A.jS("As an enthusiastic, responsive, passionate, and goal-driven programmer, I am looking to apply my knowledge and want to learn and grow all of my abilities to meet every customer's needs. Furthermore, I usually update and follow the latest tech trends and stacks and attend seminars and meetups.\n\nI'm also looking for a job, so if you need someone who has expertise in mobile/back-end development, or just basically gets in touch and chat, feels free to contact me with these social networks or watch my resume below.",null,null,null,!1,null)
-B.Eo=new A.jS("MENU",null,B.R,"DINPro Bold",!1,null)
+B.El=new A.jS("Resume",null,B.R,"DINPro Bold",!1,null)
+B.Em=new A.jS("As an enthusiastic, responsive, passionate, and goal-driven programmer, I am looking to apply my knowledge and want to learn and grow all of my abilities to meet every customer's needs. Furthermore, I usually update and follow the latest tech trends and stacks and attend seminars and meetups.\n\nI'm also looking for a job, so if you need someone who has expertise in mobile/back-end development, or just basically gets in touch and chat, feels free to contact me with these social networks or watch my resume below.",null,null,null,!1,null)
+B.En=new A.jS("MENU",null,B.R,"DINPro Bold",!1,null)
+B.Eo=new A.jS("MOBILE DEVELOPER\n(Flutter/RN/Swift)",null,B.R,"DINPro Light",!0,null)
 B.pc=new A.f1(B.h,B.h)
 B.he=new A.p(0,1)
 B.EA=new A.p(0,-1)
