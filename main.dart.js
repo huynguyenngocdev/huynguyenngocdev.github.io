@@ -105,7 +105,7 @@ agH(a){var s,r,q,p=new Float32Array(16)
 for(s=0;s<4;++s)for(r=s*4,q=0;q<4;++q)p[q*4+s]=a[r+q]
 return p},
 asQ(a){var s,r,q=new Float32Array(9)
-for(s=0;s<9;++s){r=B.AK[s]
+for(s=0;s<9;++s){r=B.AJ[s]
 if(r<16)q[s]=a[r]
 else q[s]=0}return q},
 agI(a){var s=new Float32Array(2)
@@ -940,7 +940,7 @@ switch(b.a){case 5:case 9:s=A.mg()
 r=A.a1("sRGB")
 if(r==null)r=t.K.a(r)
 s.c.setAttribute("color-interpolation-filters",r)
-s.tL(B.AS,m)
+s.tL(B.AR,m)
 r=A.c4(a.gn(a))
 s.kg(r,"1",l)
 s.oR(l,m,1,0,0,0,6,k)
@@ -7248,7 +7248,7 @@ j=1}else j=3
 q.a=k+n
 s+=j
 r=s
-p=!0}else if(o<127&&(B.Bl[o>>>4]&1<<(o&15))!==0){if(p&&65<=o&&90>=o){if(q==null)q=new A.bI("")
+p=!0}else if(o<127&&(B.Bm[o>>>4]&1<<(o&15))!==0){if(p&&65<=o&&90>=o){if(q==null)q=new A.bI("")
 if(r<s){q.a+=B.d.af(a,r,s)
 r=s}p=!1}++s}else if(o<=93&&(B.k_[o>>>4]&1<<(o&15))!==0)A.pI(a,s,"Invalid character")
 else{if((o&64512)===55296&&s+1<c){i=a.charCodeAt(s+1)
@@ -7278,7 +7278,7 @@ if(a==="https")return"https"
 if(a==="package")return"package"
 return a},
 aeH(a,b,c){if(a==null)return""
-return A.yf(a,b,c,B.B2,!1,!1)},
+return A.yf(a,b,c,B.B1,!1,!1)},
 aeF(a,b,c,d,e,f){var s,r=e==="file",q=r||f
 if(a==null)return r?"/":""
 else s=A.yf(a,b,c,B.jZ,!0,!0)
@@ -8039,7 +8039,7 @@ if(r==null)r=3
 s=b==null?null:b.a
 r=A.O(r,s==null?3:s,c)
 r.toString
-return B.B3[A.kD(B.c.bk(r),0,8)]},
+return B.B2[A.kD(B.c.bk(r),0,8)]},
 adM(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1){return $.an().Hb(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1)},
 a8F(a,b,c,d,e,f,g,h,i,j,k,l){return $.an().H8(a,b,c,d,e,f,g,h,i,j,k,l)},
 amq(a){throw A.d(A.cb(null))},
@@ -17690,7 +17690,7 @@ q=b.as
 if(a.as!==q)return q?-1:1
 return 0},
 akP(a,b){var s=A.a3(b).h("ab<1,d1>")
-return A.akd(!0,A.ae(new A.ab(b,new A.Rr(),s),!0,s.h("b1.E")),a,B.Bu,!0,B.yx,null)},
+return A.akd(!0,A.ae(new A.ab(b,new A.Rr(),s),!0,s.h("b1.E")),a,B.Bv,!0,B.yx,null)},
 akN(a){a.bY()
 a.aM(A.ag9())},
 Br(a){var s=a.a,r=s instanceof A.np?s:null
@@ -21368,7 +21368,7 @@ n=A.ae(new A.aX(p,l),!0,l.h("k.E"))
 new A.aV(n,new A.TM(q),A.a3(n).h("aV<1>")).R(0,m.gWa())
 new A.aV(q,new A.TN(m),A.a3(q).h("aV<1>")).R(0,r)}},
 L0(a){var s,r,q,p,o,n,m,l,k=A.iT().b-1
-if(k===0)return B.Bp
+if(k===0)return B.Bq
 s=A.a([],t.jT)
 r=t.t
 q=new A.jT(A.a([],r),!1)
@@ -22545,7 +22545,7 @@ oE(){var s=this.Q
 s===$&&A.b()
 return s},
 oF(a,b,c,d){var s,r,q,p
-if(a<0||b<0)return B.Br
+if(a<0||b<0)return B.Bs
 s=this.a
 s===$&&A.b()
 s=s.a
@@ -26925,7 +26925,7 @@ k=t.f
 j=k.a(J.be(k.a(B.b_.dZ(b)),"data"))
 i=A.ck(J.be(j,"message"))
 if(i!=null&&i.length!==0){h=A.a8s(j,"assertiveness")
-q.Go(i,B.AJ[h==null?0:h])}g.d6(c,B.b_.bo(!0))
+q.Go(i,B.AI[h==null?0:h])}g.d6(c,B.b_.bo(!0))
 return
 case"flutter/navigation":g.d.k(0,0).xQ(b).bD(new A.RV(g,c),t.P)
 g.ry="/"
@@ -28361,14 +28361,14 @@ Sn(){var s=this,r=s.Q
 if(r==null){r=s.Q=new A.q_(s.r)
 r.d=new A.S1(s)}return r},
 JN(a){var s,r=this
-if(B.b.v(B.AL,a.type)){s=r.Sn()
+if(B.b.v(B.AK,a.type)){s=r.Sn()
 s.toString
 s.sx9(J.eg(r.r.$0(),B.jA))
 if(r.z!==B.jI){r.z=B.jI
 r.DR()}}return r.w.a.LE(a)},
 DR(){var s,r
 for(s=this.as,r=0;r<s.length;++r)s[r].$1(this.z)},
-LD(a){if(B.b.v(B.Bj,a))return this.z===B.bK
+LD(a){if(B.b.v(B.Bk,a))return this.z===B.bK
 return!1},
 a3K(a){var s,r,q,p,o,n,m,l,k,j,i=this,h=null
 if(!i.x){i.w.a.m()
@@ -30930,7 +30930,7 @@ n=A.yG(r.k(s,"fontWeightIndex"))
 m=n!=null?A.ag3(n):"normal"
 l=A.aeS(r.k(s,"fontSize"))
 if(l==null)l=null
-q=new A.a09(new A.Rn(l,m,A.ck(r.k(s,"fontFamily")),B.BG[p],B.jY[o]))
+q=new A.a09(new A.Rn(l,m,A.ck(r.k(s,"fontFamily")),B.BH[p],B.jY[o]))
 break
 case"TextInput.clearClient":q=B.wY
 break
@@ -39961,7 +39961,7 @@ n=o.e
 o=o.CW
 r=q.gUF()
 q.a.toString
-return new A.vM(p,p,p,new A.a3k(),p,p,p,p,p,n,B.DM,p,p,B.Bv,q.gUN(),o,p,B.IO,s,p,r,p,p,B.jW,!1,!1,!1,!1,q.gUr(),!1,p,p,p,new A.ik(q,t.bT))},
+return new A.vM(p,p,p,new A.a3k(),p,p,p,p,p,n,B.DM,p,p,B.Bw,q.gUN(),o,p,B.IO,s,p,r,p,p,B.jW,!1,!1,!1,!1,q.gUr(),!1,p,p,p,new A.ik(q,t.bT))},
 K(a){var s,r=null,q=A.BK(!1,!1,this.Qe(a),r,r,r,r,!0,r,r,new A.a3l(),r,r,r)
 this.a.toString
 s=this.d
@@ -45708,7 +45708,7 @@ r=A.ae(new A.ab(s,new A.a0q(p),r),!1,r.h("b1.E"))}return r},
 ew(a){var s=this.b
 return s.a.a.ew(a.a4(0,s.ghh()))},
 qH(){var s,r,q=this.b,p=q.ghh()
-if(!isFinite(p.a)||!isFinite(p.b))return B.Bn
+if(!isFinite(p.a)||!isFinite(p.b))return B.Bo
 s=q.e
 if(s==null){s=q.a.a.qH()
 q.e=s}if(p.j(0,B.h))r=s
@@ -51584,8 +51584,8 @@ break
 case 1:return A.V(q,r)}})
 return A.W($async$vh,r)},
 Sd(a,b){var s,r,q,p
-if(a===b)return B.Bq
-if(a===B.eT&&b===B.dn)return B.AI
+if(a===b)return B.Br
+if(a===B.eT&&b===B.dn)return B.AH
 s=A.a([],t.QP)
 if(a==null)s.push(b)
 else{r=B.b.hN(B.dQ,a)
@@ -52773,7 +52773,7 @@ this.e.dz(a)}}
 A.ki.prototype={
 i(a){return"Entry#"+A.aQ(this)+"("+this.d.i(0)+")"}}
 A.q4.prototype={
-ak(){return new A.vT(A.ax(t.Ie),B.Bt,null,null,B.j)},
+ak(){return new A.vT(A.ax(t.Ie),B.Bu,null,null,B.j)},
 a3B(a,b){return this.w.$2(a,b)},
 a1W(a,b){return A.aqS().$2(a,b)}}
 A.vT.prototype={
@@ -55972,7 +55972,7 @@ j(a,b){var s=this
 if(b==null)return!1
 if(J.L(b)!==A.u(s))return!1
 return b instanceof A.c_&&b.a===s.a&&b.b===s.b&&b.d===s.d&&A.cZ(null,null)},
-gt(a){return A.K(this.a,this.b,null,this.d,A.cg(B.Bs),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+gt(a){return A.K(this.a,this.b,null,this.d,A.cg(B.Bt),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 i(a){return"IconData(U+"+B.d.lI(B.f.hm(this.a,16).toUpperCase(),5,"0")+")"}}
 A.ln.prototype={
 bz(a){return!this.w.j(0,a.w)}}
@@ -56503,7 +56503,7 @@ b=s?d:b.ax
 if(b==null)b=B.hd
 c.gjr()
 c.gjr()
-f=new A.tm(a0,a,r,q,m,p,o,n,g===!0,l,k,h,j,i,b,new A.AR(d),B.Bm)
+f=new A.tm(a0,a,r,q,m,p,o,n,g===!0,l,k,h,j,i,b,new A.AR(d),B.Bn)
 if(!f.j(0,e.e))e.au(new A.a3C(e,f))},
 Hn(){this.mV()},
 Hp(){if(this.d==null)this.mV()},
@@ -56775,7 +56775,7 @@ m.d=new A.bH(null,t.ku)
 B.b.J(m.e,s.K7(null,m))
 m.a.toString
 r=0
-for(;!1;++r){q=B.Bw[r]
+for(;!1;++r){q=B.Bx[r]
 p=m.c
 p.toString
 p=q.x3(p)
@@ -61688,7 +61688,7 @@ p.qh()
 return s.ap()},
 m(){var s,r,q,p,o=this
 for(s=o.b,r=s.length,q=o.gvl(),p=0;p<s.length;s.length===r||(0,A.E)(s),++p)J.aj_(s[p],q)
-o.b=B.Bo
+o.b=B.Bp
 o.y=!1
 o.dv()},
 e_(a,b){return a.lc(b)},
@@ -62715,7 +62715,7 @@ r.d!==$&&A.bY()
 r.d=s.a},
 K(a){var s=null,r=this.d
 r===$&&A.b()
-return A.bk(s,A.eR(A.a([B.EW,B.aE,A.l4(A.CF(B.Bh,A.m1(),B.eR),1)],t.p),B.a6,B.a_,B.a4),B.R,s,r.b,s,B.b1,s)}}
+return A.bk(s,A.eR(A.a([B.EW,B.aE,A.l4(A.CF(B.Bi,A.m1(),B.eR),1)],t.p),B.a6,B.a_,B.a4),B.R,s,r.b,s,B.b1,s)}}
 A.rm.prototype={
 ak(){return new A.Bv(B.j)}}
 A.Bv.prototype={
@@ -62728,7 +62728,7 @@ r.d!==$&&A.bY()
 r.d=s.a},
 K(a){var s=null,r=this.d
 r===$&&A.b()
-return A.bk(s,A.eR(A.a([B.EZ,B.aE,A.l4(A.CF(B.AG,A.m1(),B.eR),1)],t.p),B.a6,B.a_,B.a4),B.R,s,r.b,s,B.b1,s)}}
+return A.bk(s,A.eR(A.a([B.EZ,B.aE,A.l4(A.CF(B.Bg,A.m1(),B.eR),1)],t.p),B.a6,B.a_,B.a4),B.R,s,r.b,s,B.b1,s)}}
 A.rH.prototype={
 ak(){return new A.C7(A.a([!1,!1,!1,!1,!1],t.HZ),B.j)}}
 A.C7.prototype={
@@ -62739,7 +62739,7 @@ return A.bk(s,A.Um(!1,A.qk(20),!0,B.El,s,!0,s,s,s,s,s,s,s,new A.Ty(this,a),s,new
 K(a){var s,r=this,q=null,p=t.w,o=A.bl(a,q,p).w
 p=A.bl(a,q,p).w.a.a>1200?B.a6:B.bb
 s=t.p
-return A.bk(q,new A.FA(new A.f2(B.yY,A.eR(A.a([A.bk(q,q,q,B.w_,240,q,q,240),B.Hq,B.vJ,B.Em,B.Hp,A.ae7(B.N1,A.a([r.pn(0,B.zu,B.i,B.bR,"https://www.facebook.com/nguyen.ngoc.huy.2k1"),r.pn(1,B.zv,B.i,B.k,"https://github.com/huynguyenngocdev"),r.pn(2,B.zs,B.bR,B.i,"https://www.linkedin.com/in/nguyen-huy-591b01225"),r.pn(3,B.zn,B.DS,B.i,"mailto:huynguyenngoc.dev@gmail.com"),r.Vr(4,"/resume/[CV]Nguyen_Ngoc_Huy.pdf")],s),0,0)],s),p,B.h9,B.a4),q),q),B.R,q,o.a.b,q,q,q)}}
+return A.bk(q,new A.FA(new A.f2(B.yY,A.eR(A.a([A.bk(q,q,q,B.w_,240,q,q,240),B.Hq,B.vJ,B.Em,B.Hp,A.ae7(B.N1,A.a([r.pn(0,B.zu,B.i,B.bR,"https://www.facebook.com/nguyen.ngoc.huy.2k1"),r.pn(1,B.zv,B.i,B.k,"https://github.com/huynguyenngocdev"),r.pn(2,B.zs,B.bR,B.i,"https://www.linkedin.com/in/huy-nguyen-ngoc/"),r.pn(3,B.zn,B.DS,B.i,"mailto:huynguyenngoc.dev@gmail.com"),r.Vr(4,"/resume/[CV]Nguyen_Ngoc_Huy.pdf")],s),0,0)],s),p,B.h9,B.a4),q),q),B.R,q,o.a.b,q,q,q)}}
 A.Tv.prototype={
 $1(a){var s=this.a
 s.au(new A.Tu(s,this.b,a))},
@@ -62772,7 +62772,7 @@ r.d!==$&&A.bY()
 r.d=s.a},
 K(a){var s=null,r=this.d
 r===$&&A.b()
-return A.bk(s,A.eR(A.a([B.EX,B.aE,A.l4(A.CF(B.B4,A.m1(),B.eR),1)],t.p),B.a6,B.a_,B.a4),B.R,s,r.b,s,B.b1,s)}}
+return A.bk(s,A.eR(A.a([B.EX,B.aE,A.l4(A.CF(B.B3,A.m1(),B.eR),1)],t.p),B.a6,B.a_,B.a4),B.R,s,r.b,s,B.b1,s)}}
 A.v1.prototype={
 ak(){return new A.LQ(B.j)}}
 A.LQ.prototype={
@@ -62783,7 +62783,7 @@ s.bX()},
 ph(a,b){var s=null,r=this.d,q=t.p
 return A.a7K(A.bk(s,A.eR(A.a([A.F3(A.a([A.bk(s,A.rL(a,B.bH,s,32),s,B.dp,60,s,s,60),B.uM,A.l4(A.Cn(b[0]),1)],q),B.bb,B.a_,B.a4),B.aE,A.iy(b[1],s,s,s)],q),B.a6,B.a_,B.a4),s,s,s,s,B.fs,r),5,s)},
 K(a){var s=this,r=null,q=t.p
-return A.bk(r,A.eR(A.a([B.EY,B.aE,A.l4(A.ae7(B.N2,A.a([s.ph(B.zq,B.BB),s.ph(B.zr,B.AU),s.ph(B.jM,B.BP),s.ph(B.zp,B.BU)],q),10,10),1)],q),B.a6,B.a_,B.a4),B.R,r,r,r,B.b1,1/0)}}
+return A.bk(r,A.eR(A.a([B.EY,B.aE,A.l4(A.ae7(B.N2,A.a([s.ph(B.zq,B.BC),s.ph(B.zr,B.AT),s.ph(B.jM,B.BP),s.ph(B.zp,B.BU)],q),10,10),1)],q),B.a6,B.a_,B.a4),B.R,r,r,r,B.b1,1/0)}}
 A.a4T.prototype={
 $0(){var s,r=this.a,q=r.d=this.b.a,p=r.c
 p.toString
@@ -65294,7 +65294,7 @@ B.H=new A.a16()
 B.bD=new A.a1a()
 B.w=new A.A(0,0,0,0)
 B.dh=new A.GJ(0,0,0,0)
-B.Bm=A.a(s([]),A.a8("w<atq>"))
+B.Bn=A.a(s([]),A.a8("w<atq>"))
 B.j7=new A.GI()
 B.cj=new A.GW()
 B.ck=new A.GX()
@@ -65624,16 +65624,16 @@ B.dP=new A.b7(9,"PR")
 B.A3=new A.Vc(1,"drawer")
 B.A4=new A.t7(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.A5=A.a(s([0,1]),t.up)
-B.Bi=A.a(s([137,80,78,71,13,10,26,10]),t.Z)
-B.zG=new A.ip(B.Bi,"image/png")
+B.Bj=A.a(s([137,80,78,71,13,10,26,10]),t.Z)
+B.zG=new A.ip(B.Bj,"image/png")
 B.At=A.a(s([71,73,70,56,55,97]),t.Z)
 B.zK=new A.ip(B.At,"image/gif")
 B.Au=A.a(s([71,73,70,56,57,97]),t.Z)
 B.zL=new A.ip(B.Au,"image/gif")
 B.A6=A.a(s([255,216,255]),t.Z)
 B.zH=new A.ip(B.A6,"image/jpeg")
-B.AN=A.a(s([82,73,70,70,null,null,null,null,87,69,66,80]),t.Z)
-B.zJ=new A.ip(B.AN,"image/webp")
+B.AM=A.a(s([82,73,70,70,null,null,null,null,87,69,66,80]),t.Z)
+B.zJ=new A.ip(B.AM,"image/webp")
 B.AE=A.a(s([66,77]),t.Z)
 B.zI=new A.ip(B.AE,"image/bmp")
 B.Av=A.a(s([B.zG,B.zK,B.zL,B.zH,B.zJ,B.zI]),A.a8("w<ip>"))
@@ -65642,33 +65642,19 @@ B.xi=new A.n_(0,"auto")
 B.xj=new A.n_(1,"full")
 B.xk=new A.n_(2,"chromium")
 B.AF=A.a(s([B.xi,B.xj,B.xk]),A.a8("w<n_>"))
-B.hT=new A.vx(null)
-B.BM=A.a(s(["Digital Fortress Company","September, 2022 - Present (Mobile Developer)","\n Main responsibilities:\n - Responsible for and developing the entire app(built infrastructure, built UI/UX, developed all features, published to App Store) to control and manage smart devices by Matter protocol with SwiftUI and Objective-C\n - Worked as a Scum Master to manage the project and team members\n - Research, understand, and test the implementation of new IoT technologies\n - Developed an app to manage and control smart devices (ESP32) by BLE, TCP Socket, and WebSocket with Swift (UIkit), using Amazon Cognito to make identity provider and Amazon S3 to manage images\n - Joined in the process of developing the product of the company by SwiftUI with Swift Package Module, using Google Maps and MapKit to optimize map display, pick locations, and recommend locations\n - Built a Flutter codebase that follows the clean architecture and made it scalable with a modularization approach\n - Helped other members get started with SwiftUI and Flutter Boilerplate\n Achievements and skills gained:\n - Learned Swift language and Modular Project Structure with (SPM)\n - Understood more MQTT and used the AWS services(Cognito, Alexa,...)\n - Improved English skills when meeting 1-1 with client\n"]),t.s)
-B.M_=new A.eI("https://github.com/digitalfortress-dev/flutter-boilerplate")
-B.k4=A.a(s([B.M_]),t.ee)
-B.E2=new A.nX(B.BM,B.k4,null)
-B.Bg=A.a(s(["Umbala Metaverse Company","April, 2022 - August, 2022 (Front-End Web & Mobile Developer - Full time intern)","\n Main responsibilities:\n - Developed the mobile version for the landing page of company\n - Participated in mobile app development (company internal project) using Flutter\n - Developed feature login with MetaMask and get the wallet address\n - Developed feature take a photo and save to mobile phone's storage\n Achievements and skills gained:\n - Learned more about OOP, SOLID, Software Architecture(MVC, MVP, MVVM, Clean Architecture), and Design Pattern\n - Improved the ability to use Flutter ( call API with Retrofit, state management with Provider and BLoC, use DI, deep-link, write unit test,...)\n - Improved teamwork and Agile Scrum skills"]),t.s)
-B.fN=A.a(s([]),t.ee)
-B.E3=new A.nX(B.Bg,B.fN,null)
-B.BN=A.a(s(["Code Engine Studio","July, 2021 - September, 2021 (Back-End NodeJS Developer - Full time Intern)","We made a project about a virtual classroom application (with an idea from Google Classroom).\n Main responsibilities:\n - Created and developed API with Node.js and MongoDB\n - Develop function \u201cLogin with Google\u201d\n - Writing the API documentation\n - Develop function \u201cUpload files to Google Drive\u201d\n\n Link project here: "]),t.s)
-B.LZ=new A.eI("https://pnv-ces-classwork.herokuapp.com/docs/")
-B.Bf=A.a(s([B.LZ]),t.ee)
-B.E4=new A.nX(B.BN,B.Bf,null)
-B.hS=new A.vw(null)
-B.AG=A.a(s([B.hT,B.E2,B.E3,B.E4,B.hS]),t.p)
 B.jV=A.a(s([B.fA,B.dH,B.cx,B.dK,B.dO,B.bP,B.jU,B.fL,B.ak,B.dP,B.bk,B.cu,B.cv,B.dI,B.cw,B.fB,B.b5,B.fC,B.fD,B.jS,B.aj,B.dJ,B.cy,B.cz,B.fE,B.fF,B.fG,B.fH,B.jT,B.fI,B.fJ,B.dL,B.cA,B.cB,B.fK,B.dM,B.dN]),A.a8("w<b7>"))
 B.dQ=A.a(s([B.dn,B.eS,B.iq,B.ir,B.eT]),t.QP)
-B.AI=A.a(s([B.dn]),t.QP)
-B.AJ=A.a(s([B.eU,B.eV]),A.a8("w<qg>"))
-B.AK=A.a(s([0,4,12,1,5,13,3,7,15]),t.t)
-B.AL=A.a(s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","keyup","keydown"]),t.s)
-B.AS=A.a(s([0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0]),t.up)
-B.AU=A.a(s(["Web","HTML, CSS, ReactJS, Laravel, Flutter"]),t.s)
+B.AH=A.a(s([B.dn]),t.QP)
+B.AI=A.a(s([B.eU,B.eV]),A.a8("w<qg>"))
+B.AJ=A.a(s([0,4,12,1,5,13,3,7,15]),t.t)
+B.AK=A.a(s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","keyup","keydown"]),t.s)
+B.AR=A.a(s([0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0]),t.up)
+B.AT=A.a(s(["Web","HTML, CSS, ReactJS, Laravel, Flutter"]),t.s)
 B.C0=new A.jN("en","US")
 B.jW=A.a(s([B.C0]),t.ss)
 B.dR=A.a(s([0,0,24576,1023,65534,34815,65534,18431]),t.t)
 B.jX=A.a(s([0,0,26624,1023,65534,2047,65534,2047]),t.t)
-B.B2=A.a(s([0,0,32722,12287,65534,34815,65534,18431]),t.t)
+B.B1=A.a(s([0,0,32722,12287,65534,34815,65534,18431]),t.t)
 B.fy=new A.eW(0)
 B.zc=new A.eW(1)
 B.zd=new A.eW(2)
@@ -65678,24 +65664,28 @@ B.ze=new A.eW(5)
 B.cr=new A.eW(6)
 B.zf=new A.eW(7)
 B.jE=new A.eW(8)
-B.B3=A.a(s([B.fy,B.zc,B.zd,B.t,B.av,B.ze,B.cr,B.zf,B.jE]),A.a8("w<eW>"))
-B.Bz=A.a(s(["Flutter Boilerplate","6 - 11, October 2022 (Mobile Developer)","A Flutter Boilerplate follows the clean architecture and makes it easy scalable with a modularization approach.\n Main responsibilities:\n - Setup environment dev, staging and product for boilerplate\n - Created the code base following the clean architecture and used BloC for state management\n - Write a document for boilerplate and how to apply Clean Architecture\n - Created an example"]),t.s)
-B.E5=new A.lA(B.Bz,B.k4,null)
-B.B5=A.a(s(["Little Star Application (Graduation Project)","November, 2021 - March, 2022 (Leader - Flutter Mobile Developer)",'Little Star is an app to help children from 3 to 7 years old learn Vietnamese with listening - reading - speaking skills and watch good videos that have safe content and are useful for the growth of the child.\n Main responsibilities:\n - Made a plan, wrote Business Model Canvas, made the slide, and reports\n - Developed the Flutter mobile app  for kids to practice listening, reading, and speaking skills and a dashboard for parents to check lessons history, time using the app, videos that kids watched\n - Apply Scrum, manage tasks and progress of team members, held meetings with mentors, and support team members\n Recognition and Gains:\n - Top 1 in the "Moment of Trust" contest in Passerelles num\xe9riques Vietnam\n - In the top 100 of Startup Wheel 2022']),t.s)
+B.B2=A.a(s([B.fy,B.zc,B.zd,B.t,B.av,B.ze,B.cr,B.zf,B.jE]),A.a8("w<eW>"))
+B.hT=new A.vx(null)
+B.BA=A.a(s(["Flutter Boilerplate","6 - 11, October 2022 (Mobile Developer)","A Flutter Boilerplate follows the clean architecture and makes it easy scalable with a modularization approach.\n Main responsibilities:\n - Setup environment dev, staging and product for boilerplate\n - Created the code base following the clean architecture and used BloC for state management\n - Write a document for boilerplate and how to apply Clean Architecture\n - Created an example"]),t.s)
+B.M_=new A.eI("https://github.com/digitalfortress-dev/flutter-boilerplate")
+B.k4=A.a(s([B.M_]),t.ee)
+B.E5=new A.lA(B.BA,B.k4,null)
+B.B4=A.a(s(["Little Star Application (Graduation Project)","November, 2021 - March, 2022 (Leader - Flutter Mobile Developer)",'Little Star is an app to help children from 3 to 7 years old learn Vietnamese with listening - reading - speaking skills and watch good videos that have safe content and are useful for the growth of the child.\n Main responsibilities:\n - Made a plan, wrote Business Model Canvas, made the slide, and reports\n - Developed the Flutter mobile app  for kids to practice listening, reading, and speaking skills and a dashboard for parents to check lessons history, time using the app, videos that kids watched\n - Apply Scrum, manage tasks and progress of team members, held meetings with mentors, and support team members\n Recognition and Gains:\n - Top 1 in the "Moment of Trust" contest in Passerelles num\xe9riques Vietnam\n - In the top 100 of Startup Wheel 2022']),t.s)
 B.LY=new A.eI("http://little-star-web.herokuapp.com/")
 B.BW=A.a(s([B.LY]),t.ee)
-B.E7=new A.lA(B.B5,B.BW,null)
+B.E7=new A.lA(B.B4,B.BW,null)
 B.BX=A.a(s(["Totoro Milk Tea Website","May 2021 - June 2021 (Team Leader & Full-Stack Developer)"," Main responsibilities:\n - Assigned tasks to team members\n - Designed and developed user interface and functions (add to card, upload images, show ads sale off,...) with ReactJS\n - Developed RESTful API and protecting it by JWT with NodeJS\n - Handle images in API (convert from base64 to images)"]),t.s)
 B.LT=new A.eI("http://totoromilktea.herokuapp.com")
 B.LX=new A.eI("https://github.com/huynguyenngocdev/TotoroMilkTea")
 B.LV=new A.eI("https://github.com/huynguyenngocdev/TotoroMilkTeaAPI")
-B.AH=A.a(s([B.LT,B.LX,B.LV]),t.ee)
-B.E8=new A.lA(B.BX,B.AH,null)
+B.AG=A.a(s([B.LT,B.LX,B.LV]),t.ee)
+B.E8=new A.lA(B.BX,B.AG,null)
 B.BQ=A.a(s(["Rebuild Passerelles num\xe9riques Vietnam(PNV)","June 2021 - July 2021 (Team Leader & Full-Stack Developer)","This is a project for the \"Rebuild the landing page PNV\" contest. Of course, our website is a FAKE page, it is only used for demonstration when presenting. (REAL PAGE of PNV is here: https://www.passerellesnumeriques.org/) Main responsibilities:\n - Management and assigned tasks to team members\n - Developed landing page with ReactJS: \n   + Implement UI\n   + Implement API\n   + Add Facebook messenger customer chat function\n   + Add Facebook messenger customer chat function\n   + Handled send email function\n   + Handled routes\n   + Handled upload image to API\n   + Created animation the numbers run when scrolled to\n   + Review and merge code for team members\n - Developed API with Laravel:\n   + Created function upload images to 'imgbb.com'\n   + Protecting API by Passport\n   + Handled API endpoint and middleware\n   + Analyzed and created the database\n   + Set up for migration the database\n   + Created controller to CRUD the database and return JSON when API called\n   + Deploy to serve"]),t.s)
 B.LS=new A.eI("https://pnv22web-passerellesnumeriques-robusta.netlify.app/")
 B.As=A.a(s([B.LS]),t.ee)
 B.E6=new A.lA(B.BQ,B.As,null)
-B.B4=A.a(s([B.hT,B.E5,B.E7,B.E8,B.E6,B.hS]),t.p)
+B.hS=new A.vw(null)
+B.B3=A.a(s([B.hT,B.E5,B.E7,B.E8,B.E6,B.hS]),t.p)
 B.aa=new A.vk(0,"upstream")
 B.A=new A.vk(1,"downstream")
 B.Bc=A.a(s([B.aa,B.A]),A.a8("w<vk>"))
@@ -65715,42 +65705,52 @@ B.w5=new A.mP()
 B.hA=new A.Fg(1,"page")
 B.hB=new A.dH(B.C,B.hA)
 B.Be=A.a(s([B.w5,B.hB]),A.a8("w<aC>"))
+B.Bb=A.a(s(["Digital Fortress Company","September, 2022 - Present (Mobile Developer)","\n Main responsibilities:\n - Responsible for and developing the entire app(built infrastructure, built UI/UX, developed all features, published to App Store) to control and manage smart devices by Matter protocol with SwiftUI and Objective-C\n - Customized and fixed some bugs in some old libraries by Objective-C\n - Worked as a Scum Master to manage the project and team members\n - Research, understand, and test the implementation of new IoT technologies\n - Developed an app to manage and control smart devices (ESP32) by BLE, TCP Socket, and WebSocket with Swift (UIkit), using Amazon Cognito to make identity provider and Amazon S3 to manage images\n - Joined in the process of developing the product of the company by SwiftUI with Swift Package Module, using Google Maps and MapKit to optimize map display, pick locations, and recommend locations\n - Built a Flutter codebase that follows the clean architecture and made it scalable with a modularization approach\n - Helped other members get started with SwiftUI and Flutter Boilerplate\n Achievements and skills gained:\n - Learned Swift language and Modular Project Structure with (SPM)\n - Understood more MQTT and used the AWS services(Cognito, Alexa,...)\n - Improved English skills when meeting 1-1 with client\n"]),t.s)
+B.E2=new A.nX(B.Bb,B.k4,null)
+B.Bh=A.a(s(["Umbala Metaverse Company","April, 2022 - August, 2022 (Front-End Web & Mobile Developer - Full time intern)","\n Main responsibilities:\n - Developed the mobile version for the landing page of company\n - Participated in mobile app development (company internal project) using Flutter\n - Developed feature login with MetaMask and get the wallet address\n - Developed feature take a photo and save to mobile phone's storage\n Achievements and skills gained:\n - Learned more about OOP, SOLID, Software Architecture(MVC, MVP, MVVM, Clean Architecture), and Design Pattern\n - Improved the ability to use Flutter ( call API with Retrofit, state management with Provider and BLoC, use DI, deep-link, write unit test,...)\n - Improved teamwork and Agile Scrum skills"]),t.s)
+B.fN=A.a(s([]),t.ee)
+B.E3=new A.nX(B.Bh,B.fN,null)
+B.BN=A.a(s(["Code Engine Studio","July, 2021 - September, 2021 (Back-End NodeJS Developer - Full time Intern)","We made a project about a virtual classroom application (with an idea from Google Classroom).\n Main responsibilities:\n - Created and developed API with Node.js and MongoDB\n - Develop function \u201cLogin with Google\u201d\n - Writing the API documentation\n - Develop function \u201cUpload files to Google Drive\u201d\n\n Link project here: "]),t.s)
+B.LZ=new A.eI("https://pnv-ces-classwork.herokuapp.com/docs/")
+B.Bf=A.a(s([B.LZ]),t.ee)
+B.E4=new A.nX(B.BN,B.Bf,null)
+B.Bg=A.a(s([B.hT,B.E2,B.E3,B.E4,B.hS]),t.p)
 B.jZ=A.a(s([0,0,65490,12287,65535,34815,65534,18431]),t.t)
 B.O9=A.a(s(["Passerelles num\xe9riques Vietnam - DanaVTC","Sep 2019  -  Oct 2022",u.i]),t.s)
 B.LU=new A.eI("https://www.passerellesnumeriques.org/")
 B.BS=A.a(s([B.LU]),t.ee)
 B.E1=new A.D7(null)
-B.Bh=A.a(s([B.hT,B.E1,B.hS]),t.p)
+B.Bi=A.a(s([B.hT,B.E1,B.hS]),t.p)
 B.k_=A.a(s([0,0,32776,33792,1,10240,0,0]),t.t)
-B.Bj=A.a(s(["click","scroll"]),t.s)
-B.Bl=A.a(s([0,0,32754,11263,65534,34815,65534,18431]),t.t)
-B.Bq=A.a(s([]),t.QP)
+B.Bk=A.a(s(["click","scroll"]),t.s)
+B.Bm=A.a(s([0,0,32754,11263,65534,34815,65534,18431]),t.t)
+B.Br=A.a(s([]),t.QP)
 B.k2=A.a(s([]),A.a8("w<atc>"))
-B.Bu=A.a(s([]),t.E)
-B.Bn=A.a(s([]),t.ER)
+B.Bv=A.a(s([]),t.E)
+B.Bo=A.a(s([]),t.ER)
 B.O8=A.a(s([]),t.ss)
-B.Bv=A.a(s([]),t.tc)
+B.Bw=A.a(s([]),t.tc)
 B.dS=A.a(s([]),t.R)
 B.k1=A.a(s([]),t.fy)
-B.Bp=A.a(s([]),t.jT)
-B.Bw=A.a(s([]),A.a8("w<a8E<@>>"))
+B.Bq=A.a(s([]),t.jT)
+B.Bx=A.a(s([]),A.a8("w<a8E<@>>"))
 B.fO=A.a(s([]),t.AO)
-B.Bo=A.a(s([]),t.D1)
+B.Bp=A.a(s([]),t.D1)
 B.fP=A.a(s([]),t.V)
 B.k0=A.a(s([]),t.s)
 B.T=A.a(s([]),t.oU)
-B.Br=A.a(s([]),t.G)
-B.Bt=A.a(s([]),t.p)
+B.Bs=A.a(s([]),t.G)
+B.Bu=A.a(s([]),t.p)
 B.cC=A.a(s([]),t.t)
-B.Bs=A.a(s([]),A.a8("w<t?>"))
-B.BB=A.a(s(["Mobile","Flutter/Dart, UIKit, SwiftUI, React Native"]),t.s)
+B.Bt=A.a(s([]),A.a8("w<t?>"))
+B.BC=A.a(s(["Mobile","Flutter/Dart, UIKit, SwiftUI, React Native"]),t.s)
 B.dd=new A.fO(0,"left")
 B.hP=new A.fO(1,"right")
 B.de=new A.fO(2,"center")
 B.es=new A.fO(3,"justify")
 B.b8=new A.fO(4,"start")
 B.hQ=new A.fO(5,"end")
-B.BG=A.a(s([B.dd,B.hP,B.de,B.es,B.b8,B.hQ]),A.a8("w<fO>"))
+B.BH=A.a(s([B.dd,B.hP,B.de,B.es,B.b8,B.hQ]),A.a8("w<fO>"))
 B.BP=A.a(s(["Automation test","Cypress, WebdriverIO"]),t.s)
 B.dT=A.a(s([0,0,65490,45055,65535,34815,65534,18431]),t.t)
 B.cO=new A.ey(0,"controlModifier")
@@ -66608,57 +66608,57 @@ B.AA=A.a(s([54,null,null,8589935158]),t.Z)
 B.AB=A.a(s([55,null,null,8589935159]),t.Z)
 B.AC=A.a(s([56,null,null,8589935160]),t.Z)
 B.AD=A.a(s([57,null,null,8589935161]),t.Z)
-B.AO=A.a(s([8589934852,8589934852,8589934853,null]),t.Z)
+B.AN=A.a(s([8589934852,8589934852,8589934853,null]),t.Z)
 B.Aa=A.a(s([4294967555,null,4294967555,null]),t.Z)
 B.Ab=A.a(s([4294968065,null,null,8589935154]),t.Z)
 B.Ac=A.a(s([4294968066,null,null,8589935156]),t.Z)
 B.Ad=A.a(s([4294968067,null,null,8589935158]),t.Z)
 B.Ae=A.a(s([4294968068,null,null,8589935160]),t.Z)
 B.Aj=A.a(s([4294968321,null,null,8589935157]),t.Z)
-B.AP=A.a(s([8589934848,8589934848,8589934849,null]),t.Z)
+B.AO=A.a(s([8589934848,8589934848,8589934849,null]),t.Z)
 B.A9=A.a(s([4294967423,null,null,8589935150]),t.Z)
 B.Af=A.a(s([4294968069,null,null,8589935153]),t.Z)
 B.A8=A.a(s([4294967309,null,null,8589935117]),t.Z)
 B.Ag=A.a(s([4294968070,null,null,8589935159]),t.Z)
 B.Ak=A.a(s([4294968327,null,null,8589935152]),t.Z)
-B.AQ=A.a(s([8589934854,8589934854,8589934855,null]),t.Z)
+B.AP=A.a(s([8589934854,8589934854,8589934855,null]),t.Z)
 B.Ah=A.a(s([4294968071,null,null,8589935155]),t.Z)
 B.Ai=A.a(s([4294968072,null,null,8589935161]),t.Z)
-B.AR=A.a(s([8589934850,8589934850,8589934851,null]),t.Z)
-B.p2=new A.c7(["*",B.Al,"+",B.Am,"-",B.An,".",B.Ao,"/",B.Ap,"0",B.Aq,"1",B.Ar,"2",B.Aw,"3",B.Ax,"4",B.Ay,"5",B.Az,"6",B.AA,"7",B.AB,"8",B.AC,"9",B.AD,"Alt",B.AO,"AltGraph",B.Aa,"ArrowDown",B.Ab,"ArrowLeft",B.Ac,"ArrowRight",B.Ad,"ArrowUp",B.Ae,"Clear",B.Aj,"Control",B.AP,"Delete",B.A9,"End",B.Af,"Enter",B.A8,"Home",B.Ag,"Insert",B.Ak,"Meta",B.AQ,"PageDown",B.Ah,"PageUp",B.Ai,"Shift",B.AR],A.a8("c7<t,z<n?>>"))
-B.BH=A.a(s([B.kb,null,null,B.oS]),t.L)
-B.BI=A.a(s([B.oE,null,null,B.oT]),t.L)
-B.BJ=A.a(s([B.oF,null,null,B.oU]),t.L)
-B.BK=A.a(s([B.oG,null,null,B.fX]),t.L)
-B.BL=A.a(s([B.oH,null,null,B.oV]),t.L)
-B.AV=A.a(s([B.oI,null,null,B.fY]),t.L)
-B.AW=A.a(s([B.oJ,null,null,B.fZ]),t.L)
-B.AX=A.a(s([B.oK,null,null,B.h_]),t.L)
-B.AY=A.a(s([B.oL,null,null,B.h0]),t.L)
-B.AZ=A.a(s([B.oM,null,null,B.h1]),t.L)
-B.B_=A.a(s([B.oN,null,null,B.h2]),t.L)
-B.B0=A.a(s([B.oO,null,null,B.h3]),t.L)
-B.B1=A.a(s([B.oP,null,null,B.h4]),t.L)
+B.AQ=A.a(s([8589934850,8589934850,8589934851,null]),t.Z)
+B.p2=new A.c7(["*",B.Al,"+",B.Am,"-",B.An,".",B.Ao,"/",B.Ap,"0",B.Aq,"1",B.Ar,"2",B.Aw,"3",B.Ax,"4",B.Ay,"5",B.Az,"6",B.AA,"7",B.AB,"8",B.AC,"9",B.AD,"Alt",B.AN,"AltGraph",B.Aa,"ArrowDown",B.Ab,"ArrowLeft",B.Ac,"ArrowRight",B.Ad,"ArrowUp",B.Ae,"Clear",B.Aj,"Control",B.AO,"Delete",B.A9,"End",B.Af,"Enter",B.A8,"Home",B.Ag,"Insert",B.Ak,"Meta",B.AP,"PageDown",B.Ah,"PageUp",B.Ai,"Shift",B.AQ],A.a8("c7<t,z<n?>>"))
+B.BI=A.a(s([B.kb,null,null,B.oS]),t.L)
+B.BJ=A.a(s([B.oE,null,null,B.oT]),t.L)
+B.BK=A.a(s([B.oF,null,null,B.oU]),t.L)
+B.BL=A.a(s([B.oG,null,null,B.fX]),t.L)
+B.BM=A.a(s([B.oH,null,null,B.oV]),t.L)
+B.AU=A.a(s([B.oI,null,null,B.fY]),t.L)
+B.AV=A.a(s([B.oJ,null,null,B.fZ]),t.L)
+B.AW=A.a(s([B.oK,null,null,B.h_]),t.L)
+B.AX=A.a(s([B.oL,null,null,B.h0]),t.L)
+B.AY=A.a(s([B.oM,null,null,B.h1]),t.L)
+B.AZ=A.a(s([B.oN,null,null,B.h2]),t.L)
+B.B_=A.a(s([B.oO,null,null,B.h3]),t.L)
+B.B0=A.a(s([B.oP,null,null,B.h4]),t.L)
 B.BY=A.a(s([B.oQ,null,null,B.h5]),t.L)
 B.BZ=A.a(s([B.oR,null,null,B.h6]),t.L)
-B.BC=A.a(s([B.cK,B.cK,B.e_,null]),t.L)
+B.BD=A.a(s([B.cK,B.cK,B.e_,null]),t.L)
 B.C_=A.a(s([B.dW,null,B.dW,null]),t.L)
-B.B6=A.a(s([B.ax,null,null,B.h_]),t.L)
-B.B7=A.a(s([B.ap,null,null,B.h1]),t.L)
-B.B8=A.a(s([B.aq,null,null,B.h3]),t.L)
-B.Bk=A.a(s([B.ay,null,null,B.h5]),t.L)
-B.Bx=A.a(s([B.fU,null,null,B.h2]),t.L)
-B.BD=A.a(s([B.cI,B.cI,B.dZ,null]),t.L)
-B.AT=A.a(s([B.a7,null,null,B.fX]),t.L)
-B.B9=A.a(s([B.bl,null,null,B.fZ]),t.L)
+B.B5=A.a(s([B.ax,null,null,B.h_]),t.L)
+B.B6=A.a(s([B.ap,null,null,B.h1]),t.L)
+B.B7=A.a(s([B.aq,null,null,B.h3]),t.L)
+B.Bl=A.a(s([B.ay,null,null,B.h5]),t.L)
+B.By=A.a(s([B.fU,null,null,B.h2]),t.L)
+B.BE=A.a(s([B.cI,B.cI,B.dZ,null]),t.L)
+B.AS=A.a(s([B.a7,null,null,B.fX]),t.L)
+B.B8=A.a(s([B.bl,null,null,B.fZ]),t.L)
 B.BO=A.a(s([B.dV,null,null,B.fW]),t.L)
-B.Ba=A.a(s([B.bm,null,null,B.h4]),t.L)
-B.By=A.a(s([B.fV,null,null,B.fY]),t.L)
-B.BE=A.a(s([B.cL,B.cL,B.e0,null]),t.L)
-B.Bb=A.a(s([B.cG,null,null,B.h0]),t.L)
-B.BA=A.a(s([B.cH,null,null,B.h6]),t.L)
-B.BF=A.a(s([B.bQ,B.bQ,B.cJ,null]),t.L)
-B.DP=new A.c7(["*",B.BH,"+",B.BI,"-",B.BJ,".",B.BK,"/",B.BL,"0",B.AV,"1",B.AW,"2",B.AX,"3",B.AY,"4",B.AZ,"5",B.B_,"6",B.B0,"7",B.B1,"8",B.BY,"9",B.BZ,"Alt",B.BC,"AltGraph",B.C_,"ArrowDown",B.B6,"ArrowLeft",B.B7,"ArrowRight",B.B8,"ArrowUp",B.Bk,"Clear",B.Bx,"Control",B.BD,"Delete",B.AT,"End",B.B9,"Enter",B.BO,"Home",B.Ba,"Insert",B.By,"Meta",B.BE,"PageDown",B.Bb,"PageUp",B.BA,"Shift",B.BF],A.a8("c7<t,z<f?>>"))
+B.B9=A.a(s([B.bm,null,null,B.h4]),t.L)
+B.Bz=A.a(s([B.fV,null,null,B.fY]),t.L)
+B.BF=A.a(s([B.cL,B.cL,B.e0,null]),t.L)
+B.Ba=A.a(s([B.cG,null,null,B.h0]),t.L)
+B.BB=A.a(s([B.cH,null,null,B.h6]),t.L)
+B.BG=A.a(s([B.bQ,B.bQ,B.cJ,null]),t.L)
+B.DP=new A.c7(["*",B.BI,"+",B.BJ,"-",B.BK,".",B.BL,"/",B.BM,"0",B.AU,"1",B.AV,"2",B.AW,"3",B.AX,"4",B.AY,"5",B.AZ,"6",B.B_,"7",B.B0,"8",B.BY,"9",B.BZ,"Alt",B.BD,"AltGraph",B.C_,"ArrowDown",B.B5,"ArrowLeft",B.B6,"ArrowRight",B.B7,"ArrowUp",B.Bl,"Clear",B.By,"Control",B.BE,"Delete",B.AS,"End",B.B8,"Enter",B.BO,"Home",B.B9,"Insert",B.Bz,"Meta",B.BF,"PageDown",B.Ba,"PageUp",B.BB,"Shift",B.BG],A.a8("c7<t,z<f?>>"))
 B.DQ=new A.ti(null,null,null,null,null,null,null,null)
 B.xM=new A.J(4284790262)
 B.xJ=new A.J(4282557941)
@@ -67383,8 +67383,8 @@ B.N6=new A.w3(0,"inside")
 B.N7=new A.w3(1,"higher")
 B.N8=new A.w3(2,"lower")
 B.y8=new A.J(67108864)
-B.AM=A.a(s([B.y8,B.af]),t.t_)
-B.N9=new A.fT(B.AM)
+B.AL=A.a(s([B.y8,B.af]),t.t_)
+B.N9=new A.fT(B.AL)
 B.Na=new A.fT(null)
 B.bx=new A.wj(0,"ready")
 B.Nf=new A.wj(1,"possible")
