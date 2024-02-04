@@ -11,7 +11,7 @@ import 'package:huy_resume/utils/text_defaults/text_big.dart';
 import 'package:huy_resume/utils/text_defaults/text_normal.dart';
 
 class HomeContent extends StatefulWidget {
-  const HomeContent({Key? key}) : super(key: key);
+  const HomeContent({super.key});
 
   @override
   State<StatefulWidget> createState() => HomeContentState();

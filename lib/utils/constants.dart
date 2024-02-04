@@ -12,13 +12,13 @@ const HEADER_SUBTITLE = "MOBILE DEVELOPER\n(Flutter/RN/Swift)";
 /* ABOUT */
 const Header_Link_1 = "https://www.facebook.com/nguyen.ngoc.huy.2k1";
 const Header_Link_2 = "https://github.com/huynguyenngocdev";
-const Header_Link_3 = "https://www.linkedin.com/in/nguyen-huy-591b01225";
+const Header_Link_3 = "https://www.linkedin.com/in/huy-nguyen-ngoc/";
 const Header_Link_4 = "mailto:huynguyenngoc.dev@gmail.com";
 
 const Contact_Info_Title = "Contact Information";
 const Contact_Info_Location = ["Location", "Danang, Vietnam"];
 const Contact_Info_Email = ["Email", "huynguyenngoc.dev@gmail.com"];
-const Contact_Info_Mobile = ["Mobile Number", "0355621838"];
+const Contact_Info_Mobile = ["Mobile Number", "+84355621838"];
 
 const About_Me_Title = "About";
 const About_Me_Desc =
@@ -82,6 +82,7 @@ const wInDF = [
   "September, 2022 - Present (Mobile Developer)",
   "\n Main responsibilities:"
       "\n - Responsible for and developing the entire app(built infrastructure, built UI/UX, developed all features, published to App Store) to control and manage smart devices by Matter protocol with SwiftUI and Objective-C"
+      "\n - Customized and fixed some bugs in some old libraries by Objective-C"
       "\n - Worked as a Scum Master to manage the project and team members"
       "\n - Research, understand, and test the implementation of new IoT technologies"
       "\n - Developed an app to manage and control smart devices (ESP32) by BLE, TCP Socket, and WebSocket with Swift (UIkit), using Amazon Cognito to make identity provider and Amazon S3 to manage images"
