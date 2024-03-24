@@ -81,6 +81,7 @@ const wInDF = [
   "Digital Fortress Company",
   "September, 2022 - Present (Mobile Developer)",
   "\n Main responsibilities:"
+      "\n - Integrated and used OpenCV, MediaPipe, ONNX Runtime, and TensorFlow to detect, analyze, and compare objects by Objective-C and Swift"
       "\n - Responsible for and developing the entire app(built infrastructure, built UI/UX, developed all features, published to App Store) to control and manage smart devices by Matter protocol with SwiftUI and Objective-C"
       "\n - Customized and fixed some bugs in some old libraries by Objective-C"
       "\n - Worked as a Scum Master to manage the project and team members"
