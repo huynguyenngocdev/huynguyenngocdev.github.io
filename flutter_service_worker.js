@@ -3,8 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"index.html": "0c4568e5212317df17bcecc0f95c2bab",
-"/": "0c4568e5212317df17bcecc0f95c2bab",
+const RESOURCES = {"index.html": "57d5ec172ecba741b0b2472cfebd7e0b",
+"/": "57d5ec172ecba741b0b2472cfebd7e0b",
 "images/main_logo.png": "a1485c88bc4c92c7289bb724fd00a68d",
 "images/avatar.jpg": "b0e997ab496238cf47e107ee1398c75e",
 "images/main_logo.jpg": "782e8b0a2fcccab378704c9a75b5bb35",
@@ -34,7 +34,7 @@ const RESOURCES = {"index.html": "0c4568e5212317df17bcecc0f95c2bab",
 "icons/Icon-192.png": "f098328470da010e9b2cbd20ad21a996",
 "manifest.json": "cddcc300d3ee5c12d3bd5e4e5a363147",
 "flutter.js": "6fef97aeca90b426343ba6c5c9dc5d4a",
-"main.dart.js": "7ec3f8b469e7bee816ddbb2db0c17d11",
+"main.dart.js": "4ddad0fbd1b6a3338051866a8f2d460f",
 "resume/%5BCV%5DNguyen_Ngoc_Huy.pdf": "81792ab7dc3b97855e152fbb85b1ac28"};
 // The application shell files that are downloaded before a service worker can
 // start.
