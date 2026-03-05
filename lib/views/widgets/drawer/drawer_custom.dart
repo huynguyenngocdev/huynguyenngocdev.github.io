@@ -7,8 +7,7 @@ import 'drawer_top.dart';
 
 class DrawerCustom extends StatelessWidget {
   const DrawerCustom(
-      {Key? key, required this.onPressDrawerItem, required this.pageSelected})
-      : super(key: key);
+      {super.key, required this.onPressDrawerItem, required this.pageSelected});
   final Function onPressDrawerItem;
   final PAGE pageSelected;
   @override

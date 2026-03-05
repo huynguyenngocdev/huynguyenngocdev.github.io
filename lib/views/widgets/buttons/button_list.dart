@@ -1,10 +1,9 @@
-import 'dart:js' as js;
-
 import 'package:flutter/material.dart';
 import 'package:huy_resume/utils/default_colors.dart';
+import 'package:web/web.dart' as web;
 
 class ButtonList extends StatelessWidget {
-  const ButtonList(this.value, {Key? key}) : super(key: key);
+  const ButtonList(this.value, {super.key});
 
   final List value;
 
@@ -25,7 +24,7 @@ class ButtonList extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
                 onHover: (hover) {},
                 onTap: () {
-                  js.context.callMethod("open", [hash.item2]);
+                  web.window.open(hash.item2.toString(), '_blank');
                 },
                 child: Icon(hash.item1, color: WebColors.light),
               ),

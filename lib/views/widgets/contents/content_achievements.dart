@@ -9,7 +9,7 @@ import 'package:huy_resume/views/widgets/buttons/button_list.dart';
 import 'package:tuple/tuple.dart';
 
 class AchievementsContent extends StatelessWidget {
-  const AchievementsContent({Key? key}) : super(key: key);
+  const AchievementsContent({super.key});
 
   _awardItem(List value, List buttons) {
     return Card(

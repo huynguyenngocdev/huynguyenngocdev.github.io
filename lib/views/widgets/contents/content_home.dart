@@ -1,6 +1,3 @@
-// ignore: avoid_web_libraries_in_flutter
-import 'dart:js' as js;
-
 import 'package:flutter/material.dart';
 import 'package:huy_resume/utils/app_icons.dart';
 import 'package:huy_resume/utils/constants.dart';
@@ -9,6 +6,7 @@ import 'package:huy_resume/utils/dipro_font.dart';
 import 'package:huy_resume/utils/responsive_layout.dart';
 import 'package:huy_resume/utils/text_defaults/text_big.dart';
 import 'package:huy_resume/utils/text_defaults/text_normal.dart';
+import 'package:web/web.dart' as web;
 
 class HomeContent extends StatefulWidget {
   const HomeContent({super.key});
@@ -41,7 +39,7 @@ class HomeContentState extends State<HomeContent> {
               });
             },
             onTap: () {
-              js.context.callMethod("open", [urlToOpen]);
+              web.window.open(urlToOpen, '_blank');
             },
             child: Icon(
               icon,
@@ -69,7 +67,7 @@ class HomeContentState extends State<HomeContent> {
           });
         },
         onTap: () {
-          js.context.callMethod("open", [urlToOpen]);
+          web.window.open(urlToOpen, '_blank');
         },
         child: const NormalText(
           "Resume",

@@ -5,7 +5,7 @@ import 'package:huy_resume/utils/dipro_font.dart';
 import 'package:huy_resume/utils/text_defaults/text_normal.dart';
 
 class DrawerTop extends StatelessWidget {
-  const DrawerTop({Key? key}) : super(key: key);
+  const DrawerTop({super.key});
 
   @override
   Widget build(BuildContext context) {

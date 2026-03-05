@@ -1,12 +1,35 @@
 # My-Curriculum-Vitae
 
-A website that I made with Flutter to introduce myself and show my portfolio.
+A website I built with Flutter to introduce myself and showcase my portfolio.
 
-# Access
+## Access
 
-- Please [[click here](https://huynguyenngocdev.github.io/)] or use link "[https://huynguyenngocdev.github.io/](https://huynguyenngocdev.github.io/)"to access my website.
+- Please [click here](https://huynguyenngocdev.github.io/) or use this link: [https://huynguyenngocdev.github.io/](https://huynguyenngocdev.github.io/).
 
-# Developer
+## CI/CD
+
+- Workflow file: `.github/workflows/workflow.yml`
+- Flutter version in CI: `3.38.0`
+- FVM config file: `.fvmrc` (`3.38.0`)
+- Trigger:
+  - `pull_request` to `main` or `master`: runs `flutter analyze`, `flutter test`, and `flutter build web`.
+  - `push` to `main` or `master`: runs all steps above and deploys to GitHub Pages.
+  - `workflow_dispatch`: allows manual runs from GitHub Actions.
+- Deploy target: GitHub Pages using `actions/upload-pages-artifact` + `actions/deploy-pages`.
+
+## Build locally (same as CI)
+
+```bash
+fvm use
+fvm flutter pub get
+fvm flutter analyze
+[ -d test ] && fvm flutter test || echo "No test directory found. Skipping tests."
+fvm flutter build web --release --base-href /
+```
+
+> `--base-href /` is appropriate for the user site `https://huynguyenngocdev.github.io/`.
+
+## Developer
 
 - Nguyen Ngoc Huy &lt;[huynguyenngoc.dev@gmail.com](huynguyenngoc.dev@gmail.com)&gt;
 

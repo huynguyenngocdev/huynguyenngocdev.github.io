@@ -7,7 +7,7 @@ import 'package:huy_resume/views/widgets/content_frame.dart';
 import 'package:huy_resume/views/widgets/drawer/drawer_custom.dart';
 
 class MobilePage extends StatefulWidget {
-  const MobilePage({Key? key}) : super(key: key);
+  const MobilePage({super.key});
 
   @override
   State<StatefulWidget> createState() => MobilePageState();

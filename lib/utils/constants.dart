@@ -186,6 +186,7 @@ const LinkPNVWeb =
 
 /* END PORTFOLIO */
 
+// ignore: non_constant_identifier_names
 final List<DrawerItemModel> DRAWER_LIST = [
   DrawerItemModel(
     icon: AppIcons.person,

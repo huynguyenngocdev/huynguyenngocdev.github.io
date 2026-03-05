@@ -9,7 +9,7 @@ import 'package:huy_resume/views/widgets/timeline/timeline_start.dart';
 import 'package:tuple/tuple.dart';
 
 class PortfolioContent extends StatefulWidget {
-  const PortfolioContent({Key? key}) : super(key: key);
+  const PortfolioContent({super.key});
 
   @override
   State<StatefulWidget> createState() => PortfolioContentState();

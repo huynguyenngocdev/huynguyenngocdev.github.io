@@ -4,12 +4,11 @@ import 'package:huy_resume/utils/dipro_font.dart';
 
 class NormalText extends StatelessWidget {
   const NormalText(this.text,
-      {Key? key,
+      {super.key,
       this.fontStyle,
       this.color,
       this.fontFamily,
-      this.isCenter = false})
-      : super(key: key);
+      this.isCenter = false});
 
   final String text;
   final FontStyle? fontStyle;

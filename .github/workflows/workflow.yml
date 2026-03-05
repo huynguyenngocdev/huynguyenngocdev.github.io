@@ -1,54 +1,70 @@
-name: Build & deploy
+name: Flutter Web CI/CD
 
 on:
   push:
-    branches:
-      - master
+    branches: [main, master]
   pull_request:
-    branches:
-      - master
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
-    name: Build
+    name: Analyze, test, and build
     runs-on: ubuntu-latest
-    
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-    
-    - name: Install Flutter
-      uses: subosito/flutter-action@v1
-      with:
-        flutter-version: '3.13.6'
-    
-    - name: Get dependencies
-      run: flutter pub get
-    
-    - name: Build release project
-      run: flutter build web
 
-    - name: Upload production-ready build files
-      uses: actions/upload-artifact@v2
-      with:
-        name: production-files
-        path: ./build/web
-  
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 3.38.0
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Analyze code
+        run: flutter analyze
+
+      - name: Run tests
+        run: |
+          if [ -d test ]; then
+            flutter test --no-pub
+          else
+            echo "No test directory found. Skipping tests."
+          fi
+
+      - name: Build web release
+        run: flutter build web --release --base-href /
+
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/web
+
   deploy:
-    name: Deploy
+    name: Deploy to GitHub Pages
     needs: build
+    if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
-    
-    steps:
-    - name: Download artifact
-      uses: actions/download-artifact@v2
-      with:
-        name: production-files
-        path: ./build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
-    - name: Deploy to gh-pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
+    steps:
+      - name: Deploy pages artifact
+        id: deployment
+        uses: actions/deploy-pages@v4

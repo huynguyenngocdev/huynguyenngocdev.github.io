@@ -3,8 +3,7 @@ import 'package:huy_resume/utils/default_colors.dart';
 import 'package:huy_resume/utils/size_configs.dart';
 
 class MilestoneBase extends StatelessWidget {
-  const MilestoneBase(this.icon, this.value, {Key? key, this.content})
-      : super(key: key);
+  const MilestoneBase(this.icon, this.value, {super.key, this.content});
 
   final IconData icon;
   final List value;

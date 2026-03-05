@@ -5,8 +5,7 @@ import 'package:huy_resume/utils/text_defaults/text_normal.dart';
 
 class DrawerItem extends StatelessWidget {
   const DrawerItem(this.icon, this.text, this.isSelected,
-      {Key? key, required this.onPressed})
-      : super(key: key);
+      {super.key, required this.onPressed});
 
   final IconData icon;
   final String text;

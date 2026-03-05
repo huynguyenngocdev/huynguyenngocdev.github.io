@@ -8,7 +8,7 @@ import 'package:huy_resume/views/widgets/contents/content_portfolio.dart';
 import 'package:huy_resume/views/widgets/contents/content_skills.dart';
 
 class ContentFrame extends StatelessWidget {
-  const ContentFrame(this.pageSelected, {Key? key}) : super(key: key);
+  const ContentFrame(this.pageSelected, {super.key});
   final PAGE pageSelected;
   Widget _defineContent(PAGE pageSelected) {
     switch (pageSelected) {

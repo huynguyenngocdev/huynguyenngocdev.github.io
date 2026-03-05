@@ -3,7 +3,7 @@ import 'package:huy_resume/utils/default_colors.dart';
 import 'package:huy_resume/utils/size_configs.dart';
 
 class TimelineEnd extends StatefulWidget {
-  const TimelineEnd({Key? key}) : super(key: key);
+  const TimelineEnd({super.key});
 
   @override
   State<TimelineEnd> createState() => _TimelineEndState();

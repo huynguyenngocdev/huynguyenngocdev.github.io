@@ -3,7 +3,7 @@ import 'package:huy_resume/utils/default_colors.dart';
 import 'package:huy_resume/utils/size_configs.dart';
 
 class TimelineStart extends StatefulWidget {
-  const TimelineStart({Key? key}) : super(key: key);
+  const TimelineStart({super.key});
 
   @override
   State<TimelineStart> createState() => _TimelineStartState();

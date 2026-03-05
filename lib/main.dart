@@ -7,7 +7,7 @@ import 'package:huy_resume/views/pages/web_page.dart';
 void main() => runApp(const WebApp());
 
 class WebApp extends StatelessWidget {
-  const WebApp({Key? key}) : super(key: key);
+  const WebApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,8 @@ class WebApp extends StatelessWidget {
         title: 'Huy NGUYEN NGOC',
         theme: ThemeData(
             primaryColor: WebColors.primary,
-            appBarTheme: const AppBarTheme(color: WebColors.primary)),
+            appBarTheme:
+                const AppBarTheme(backgroundColor: WebColors.primary)),
         debugShowCheckedModeBanner: false,
         home: const ResponsiveLayout(
           largeScreen: WebPage(),

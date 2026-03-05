@@ -5,8 +5,7 @@ import 'package:huy_resume/views/widgets/buttons/button_list.dart';
 import 'package:huy_resume/views/widgets/contents/milestones/milestone_base.dart';
 
 class MilestoneJob extends StatelessWidget {
-  const MilestoneJob(this.value, {Key? key, required this.buttons})
-      : super(key: key);
+  const MilestoneJob(this.value, {super.key, required this.buttons});
 
   final List value;
   final List buttons;

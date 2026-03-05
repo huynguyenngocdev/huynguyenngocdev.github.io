@@ -9,7 +9,7 @@ import 'package:huy_resume/utils/text_defaults/text_normal.dart';
 import 'package:huy_resume/utils/text_defaults/text_page_title.dart';
 
 class SkillsContent extends StatefulWidget {
-  const SkillsContent({Key? key}) : super(key: key);
+  const SkillsContent({super.key});
 
   @override
   State<SkillsContent> createState() => _SkillsContentState();

@@ -9,7 +9,7 @@ import 'package:huy_resume/views/widgets/timeline/timeline_start.dart';
 import 'package:tuple/tuple.dart';
 
 class EducationContent extends StatefulWidget {
-  const EducationContent({Key? key}) : super(key: key);
+  const EducationContent({super.key});
 
   @override
   State<StatefulWidget> createState() => EducationContentState();

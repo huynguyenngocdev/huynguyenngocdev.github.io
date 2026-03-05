@@ -6,7 +6,7 @@ import 'package:huy_resume/views/widgets/content_frame.dart';
 import 'package:huy_resume/views/widgets/drawer/drawer_custom.dart';
 
 class WebPage extends StatefulWidget {
-  const WebPage({Key? key}) : super(key: key);
+  const WebPage({super.key});
 
   @override
   State<StatefulWidget> createState() => WebPageState();

@@ -4,8 +4,7 @@ import 'package:huy_resume/utils/dipro_font.dart';
 
 class PageTitleText extends StatelessWidget {
   const PageTitleText(this.text,
-      {Key? key, this.fontStyle, this.color, this.fontFamily})
-      : super(key: key);
+      {super.key, this.fontStyle, this.color, this.fontFamily});
 
   final String text;
   final FontStyle? fontStyle;
