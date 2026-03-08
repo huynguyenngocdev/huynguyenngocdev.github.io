@@ -38,7 +38,7 @@ const Skills_2 = [
 ];
 const Skills_3 = [
   "Cloud, Backend & CI/CD",
-  "AWS (Cognito, S3, Amplify), Firebase, Node.js/Express, PostgreSQL/MongoDB, GitHub Actions, Fastlane, Jenkins, Docker, Nginx"
+  "AWS (Cognito, S3, Amplify), Firebase, Node.js/Express, PostgreSQL/MongoDB, GitHub Actions, Docker, Nginx"
 ];
 const Skills_4 = [
   "Architecture & Quality",
@@ -94,7 +94,7 @@ const wInDF = [
       "\n - Integrated BLE onboarding, WebRTC video streaming, MQTT communication, and Firebase analytics/notifications"
       "\n - Implemented AI features with OpenCV, MediaPipe, ONNX Runtime, TensorFlow Lite, and Vision/CoreML"
       "\n - Strengthened app security with TLS pinning, secure storage, anti-tamper checks, and App Attest/DeviceCheck"
-      "\n - Built CI/CD pipelines with GitHub Actions, Fastlane, Jenkins, and Nginx to automate build/test/release"
+      "\n - Built CI/CD pipelines with GitHub Actions, and Nginx to automate build/test/release"
       "\n - Worked directly with overseas clients, mentored interns/juniors, and led Scrum ceremonies for project delivery"
 ];
 
@@ -166,6 +166,108 @@ const AchievementImageCESInternship =
 
 /* PORTFOLIO */
 const Portfolio_Title = "PORTFOLIO";
+
+const pMatterUtilities = [
+  "Matter Utilities (SwiftUI)",
+  "Digital Fortress - iOS/macOS/Catalyst",
+  "Cross-platform smart-home app for commissioning and controlling Matter devices."
+      "\nMain highlights:"
+      "\n - Implemented commissioning flows via QR/manual code with Wi-Fi and Thread support"
+      "\n - Built multi-admin onboarding, cluster-level control, network discovery and OTBR management"
+      "\n - Built automation testing engine for scenario generation, sequential execution and JSON reports"
+      "\n - Optimized realtime updates with attribute subscriptions and local caching"
+      "\n - Integrated in-app logs, S3 diagnostic uploads, screenshot feedback to Slack, StoreKit 2 subscriptions, and multi-language support"
+];
+
+const pSmartCameraAlert = [
+  "Smart Camera & Alert System (Flutter)",
+  "Digital Fortress - Flutter (Production Release)",
+  "Large-scale Flutter app built with Clean Architecture and modularization, released on both Play Store and App Store."
+      "\nMain highlights:"
+      "\n - Hub onboarding via BLE, Wi-Fi scanning and credential provisioning"
+      "\n - Integrated multiple IoT devices: RTSP camera, doorbell, garage door, alarm and sensors"
+      "\n - Implemented realtime video streaming with WebRTC and device events via MQTT"
+      "\n - Built authentication flows: email/password, OTP, social login, push notification and deep linking"
+      "\n - Added AI features, camera zone editor, and Live Activity/Dynamic Island on iOS"
+      "\n - Established CI/CD with multi-flavor builds, GitHub Actions and Fastlane"
+];
+
+const pNfcBusinessCard = [
+  "NFC Business Card (Flutter)",
+  "Digital Fortress - Flutter (Production Release)",
+  "Digital business-card app supporting NFC and QR exchanges, published on Play Store and App Store."
+      "\nMain highlights:"
+      "\n - Built modular architecture with BLoC state management"
+      "\n - Implemented registration/login and social auth (Google/Facebook/Apple)"
+      "\n - Developed profile management, NFC activation and deep-link contact sharing"
+      "\n - Added analytics dashboards and push notifications"
+      "\n - Supported multi-language and secure local storage (Hive, flutter_secure_storage)"
+];
+
+const pTuyaSmartLife = [
+  "Tuya SmartLife Integration (Flutter & Android Native)",
+  "Digital Fortress - Flutter + Kotlin",
+  "Integrated Tuya/ThingClips SDK into Flutter through MethodChannels and Kotlin bridge."
+      "\nMain highlights:"
+      "\n - Implemented user management and home creation"
+      "\n - Built BLE scan and EZ Wi-Fi pairing flows for smart devices"
+      "\n - Implemented device info retrieval, control, removal and state publishing"
+      "\n - Exposed native capabilities back to Flutter APIs"
+      "\n - Configured Gradle dependencies, Manifest setup and Android BLE/location permissions"
+];
+
+const pPalmBiometrics = [
+  "Palm Biometrics Security (iOS)",
+  "Digital Fortress - iOS (Swift/Objective-C)",
+  "Secure authentication app using ONNX Runtime, MediaPipe, TensorFlow Lite and Vision/CoreML."
+      "\nMain highlights:"
+      "\n - Implemented palm segmentation, feature extraction and hybrid face/palm liveness detection"
+      "\n - Built registration/authentication flows and gesture-based unlocking"
+      "\n - Supported multi-environment setup (dev/staging/prod), settings and transfer workflows"
+      "\n - Wrote parity tests between iOS and Android models"
+      "\n - Enforced code quality with SwiftLint and CI via Travis CI"
+      "\n - Added analytics, crash monitoring and secure networking"
+];
+
+const pSmartPlugBulb = [
+  "Smart Plug & Smart Bulb Control (iOS & SwiftUI)",
+  "Digital Fortress - iOS/macOS",
+  "Designed a modular monorepo with Swift Package Manager (AppCore, AppState, Networking, Data, MatterHelper)."
+      "\nMain highlights:"
+      "\n - Implemented realtime control via REST and WebSocket (NWConnection)"
+      "\n - Built BLE/QR onboarding, grouping and scene management"
+      "\n - Persisted local/cloud data with CoreData and CloudKit"
+      "\n - Added notifications, ESPProvision support and MapKit dashboards"
+      "\n - Ensured quality with custom SwiftLint rules and XCTest/XCUITest coverage"
+];
+
+const pNftPhotoFrame = [
+  "NFT Photo Frame (React Native)",
+  "Digital Fortress - React Native 0.74 + React 18",
+  "Production app for managing and displaying NFT artwork on connected photo frames."
+      "\nMain highlights:"
+      "\n - Built app navigation, responsive UI, and state management with Context + reducer"
+      "\n - Implemented robust API layer with Axios interceptors and auto token refresh"
+      "\n - Added realtime features with WebSocket and NetInfo reconnect handling"
+      "\n - Integrated WalletConnect/AppKit, Wagmi, Viem for multi-chain wallet login"
+      "\n - Implemented BLE provisioning and QR pairing for IoT photo frames"
+      "\n - Added media crop/upload to presigned S3 URLs and multi-environment build scripts"
+      "\n - Included polished UX components (Snackbar, BottomSheet, Modal) and cross-platform permissions"
+];
+
+const pPersonalBackendMiniApps = [
+  "Personal Backend & Mini-App Projects",
+  "ExpressJS (TypeScript), ReactJS, Zalo Mini App",
+  "Designed and delivered multiple full-stack products outside Digital Fortress."
+      "\nExamples:"
+      "\n - Realtime competition & HR platform: REST APIs, PostgreSQL, Socket.io, cron jobs, MinIO, RBAC"
+      "\n - Restaurant booking & ordering: ReactJS website + Zalo Mini App + Zalo Checkout"
+      "\n - Pharmacy e-commerce & promotion mini-app: products, mini-games, reward redemption"
+      "\n - Medical appointment mini-app: consultation and service booking"
+      "\n\nDevOps outcomes:"
+      "\n - Set up CI/CD with GitHub Actions, deployed with PM2 + Nginx + Certbot"
+      "\n - Improved architecture scalability, operations reliability, and product delivery speed"
+];
 
 const pFlutterBoilerplate = [
   "Flutter Boilerplate",

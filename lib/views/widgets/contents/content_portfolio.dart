@@ -44,6 +44,38 @@ class PortfolioContentState extends State<PortfolioContent> {
                 children: const <Widget>[
                   TimelineStart(),
                   MilestoneProjects(
+                    pMatterUtilities,
+                    buttons: [],
+                  ),
+                  MilestoneProjects(
+                    pSmartCameraAlert,
+                    buttons: [],
+                  ),
+                  MilestoneProjects(
+                    pNfcBusinessCard,
+                    buttons: [],
+                  ),
+                  MilestoneProjects(
+                    pTuyaSmartLife,
+                    buttons: [],
+                  ),
+                  MilestoneProjects(
+                    pPalmBiometrics,
+                    buttons: [],
+                  ),
+                  MilestoneProjects(
+                    pSmartPlugBulb,
+                    buttons: [],
+                  ),
+                  MilestoneProjects(
+                    pNftPhotoFrame,
+                    buttons: [],
+                  ),
+                  MilestoneProjects(
+                    pPersonalBackendMiniApps,
+                    buttons: [],
+                  ),
+                  MilestoneProjects(
                     pFlutterBoilerplate,
                     buttons: [
                       Tuple2(AppIcons.link, LinkProjectFlutterBoilerplate),

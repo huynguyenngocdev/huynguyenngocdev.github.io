@@ -33,7 +33,7 @@ class MilestoneProjects extends StatelessWidget {
           const SizedBox(
             height: 8,
           ),
-          ButtonList(buttons),
+          buttons.isNotEmpty ? ButtonList(buttons) : Container(),
         ],
       ),
     );
