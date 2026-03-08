@@ -29,6 +29,22 @@ fvm flutter build web --release --base-href /
 
 > `--base-href /` is appropriate for the user site `https://huynguyenngocdev.github.io/`.
 
+## Run Debug
+
+```bash
+fvm use
+fvm flutter pub get
+fvm flutter run -d chrome
+```
+
+or
+
+```bash
+fvm use
+fvm flutter pub get
+fvm flutter run -d web-server
+```
+
 ## Developer
 
 - Nguyen Ngoc Huy &lt;[huynguyenngoc.dev@gmail.com](huynguyenngoc.dev@gmail.com)&gt;

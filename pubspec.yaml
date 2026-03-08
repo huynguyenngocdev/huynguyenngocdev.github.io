@@ -40,3 +40,4 @@ flutter:
         - asset: assets/fonts/dinpro/DINPro-Medium.ttf
   assets:
     - assets/images/
+    - assets/images/achievements/

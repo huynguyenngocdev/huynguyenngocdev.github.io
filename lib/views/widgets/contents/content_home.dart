@@ -83,7 +83,6 @@ class HomeContentState extends State<HomeContent> {
     return Container(
       color: WebColors.light,
       height: MediaQuery.of(context).size.height,
-      // padding: EdgeInsets.all(48),
       child: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(48),

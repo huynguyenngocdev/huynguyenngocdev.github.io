@@ -6,8 +6,8 @@ import 'package:huy_resume/utils/app_icons.dart';
 
 import 'page.dart';
 
-const HEADER_TITLE = "NGUYEN NGOC Huy";
-const HEADER_SUBTITLE = "MOBILE DEVELOPER\n(Flutter/RN/Swift)";
+const HEADER_TITLE = "NGUYEN NGOC HUY";
+const HEADER_SUBTITLE = "SENIOR MOBILE DEVELOPER\n(iOS/Flutter/React Native)";
 
 /* ABOUT */
 const Header_Link_1 = "https://www.facebook.com/nguyen.ngoc.huy.2k1";
@@ -28,12 +28,21 @@ const About_Me_Desc =
 
 /* SKILLS */
 const Skills_Title = "SKILLS";
-const Skills_1 = ["Mobile", "Flutter/Dart, UIKit, SwiftUI, React Native"];
-const Skills_2 = ["Web", "HTML, CSS, ReactJS, Laravel, Flutter"];
-const Skills_3 = ["Automation test", "Cypress, WebdriverIO"];
+const Skills_1 = [
+  "Mobile & Native",
+  "Swift (UIKit, SwiftUI, Combine), Objective-C, Flutter/Dart, React Native, Kotlin (basic)"
+];
+const Skills_2 = [
+  "IoT, AI & Realtime",
+  "Matter, Thread, BLE, MQTT, WebSocket/WebRTC, OpenCV, MediaPipe, ONNX Runtime, TensorFlow Lite, CoreML"
+];
+const Skills_3 = [
+  "Cloud, Backend & CI/CD",
+  "AWS (Cognito, S3, Amplify), Firebase, Node.js/Express, PostgreSQL/MongoDB, GitHub Actions, Fastlane, Jenkins, Docker, Nginx"
+];
 const Skills_4 = [
-  "Others",
-  "Unit Test, Firebase, MongoDB, OOP, SOLID, Agile/Scrum, Clean Architecture"
+  "Architecture & Quality",
+  "SOLID, Clean Architecture, MVVM, DI, Unit/UI Test (XCTest, XCUITest, Flutter Test), performance tuning, Agile/Scrum, mentoring"
 ];
 /* END SKILLS */
 
@@ -42,7 +51,7 @@ const Education_Title = "EDUCATION";
 const Education_1 = [
   "Passerelles numériques Vietnam - DanaVTC",
   "Sep 2019  -  Oct 2022",
-  "Major: : Information Technology\nGPA: 3.8/4"
+  "Bachelor of Information Technology\nGPA: 3.8/4"
 ];
 
 /* END EDUCATION */
@@ -52,49 +61,41 @@ const Experience_Title = "WORK EXPERIENCE";
 
 const wInCES = [
   "Code Engine Studio",
-  "July, 2021 - September, 2021 (Back-End NodeJS Developer - Full time Intern)",
-  "We made a project about a virtual classroom application (with an idea from Google Classroom)."
-      "\n Main responsibilities:"
-      "\n - Created and developed API with Node.js and MongoDB"
-      "\n - Develop function “Login with Google”"
-      "\n - Writing the API documentation"
-      "\n - Develop function “Upload files to Google Drive”"
-      "\n\n Link project here: "
+  "Jul 2021 - Sep 2021 (Back-End Developer Intern)",
+  "Main responsibilities:"
+      "\n - Developed RESTful APIs with Node.js/Express for a classroom management platform"
+      "\n - Designed data models and implemented authentication (JWT, Google OAuth)"
+      "\n - Built upload workflows with Google Drive integration"
+      "\n - Wrote API documentation and collaborated with front-end members"
+      "\n\nProject link:"
 ];
 const LinkProject_CES = "https://pnv-ces-classwork.herokuapp.com/docs/";
 
 const wInUmbala = [
   "Umbala Metaverse Company",
-  "April, 2022 - August, 2022 (Front-End Web & Mobile Developer - Full time intern)",
-  "\n Main responsibilities:"
-      "\n - Developed the mobile version for the landing page of company"
-      "\n - Participated in mobile app development (company internal project) using Flutter"
-      "\n - Developed feature login with MetaMask and get the wallet address"
-      "\n - Developed feature take a photo and save to mobile phone's storage"
-      "\n Achievements and skills gained:"
-      "\n - Learned more about OOP, SOLID, Software Architecture(MVC, MVP, MVVM, Clean Architecture), and Design Pattern"
-      "\n - Improved the ability to use Flutter ( call API with Retrofit, state management with Provider and BLoC, use DI, deep-link, write unit test,...)"
-      "\n - Improved teamwork and Agile Scrum skills"
+  "Apr 2022 - Aug 2022 (Front-End Web & Mobile Developer Intern)",
+  "Main responsibilities:"
+      "\n - Built the mobile version for the company landing page with Flutter"
+      "\n - Contributed to internal Flutter products and API integrations"
+      "\n - Implemented MetaMask wallet login and camera/storage features"
+      "\n\nKey gains:"
+      "\n - Practiced SOLID and architecture patterns (MVC, MVP, MVVM, Clean Architecture)"
+      "\n - Improved state management skills (Provider/BLoC), DI, deep-linking, and unit testing"
+      "\n - Strengthened teamwork and Scrum workflow"
 ];
 
 const wInDF = [
   "Digital Fortress Company",
-  "September, 2022 - Present (Mobile Developer)",
-  "\n Main responsibilities:"
-      "\n - Integrated and used OpenCV, MediaPipe, ONNX Runtime, and TensorFlow to detect, analyze, and compare objects by Objective-C and Swift"
-      "\n - Responsible for and developing the entire app(built infrastructure, built UI/UX, developed all features, published to App Store) to control and manage smart devices by Matter protocol with SwiftUI and Objective-C"
-      "\n - Customized and fixed some bugs in some old libraries by Objective-C"
-      "\n - Worked as a Scum Master to manage the project and team members"
-      "\n - Research, understand, and test the implementation of new IoT technologies"
-      "\n - Developed an app to manage and control smart devices (ESP32) by BLE, TCP Socket, and WebSocket with Swift (UIkit), using Amazon Cognito to make identity provider and Amazon S3 to manage images"
-      "\n - Joined in the process of developing the product of the company by SwiftUI with Swift Package Module, using Google Maps and MapKit to optimize map display, pick locations, and recommend locations"
-      "\n - Built a Flutter codebase that follows the clean architecture and made it scalable with a modularization approach"
-      "\n - Helped other members get started with SwiftUI and Flutter Boilerplate"
-      "\n Achievements and skills gained:"
-      "\n - Learned Swift language and Modular Project Structure with (SPM)"
-      "\n - Understood more MQTT and used the AWS services(Cognito, Alexa,...)"
-      "\n - Improved English skills when meeting 1-1 with client"
-      "\n"
+  "Sep 2022 - Present (Senior Mobile Developer)",
+  "Main responsibilities:"
+      "\n - Designed and shipped iOS/macOS/Catalyst apps for Matter smart-home devices using SwiftUI, Combine, and Objective-C"
+      "\n - Built commissioning and control flows (QR/manual code, Wi-Fi, Thread, multi-admin, OTA) with realtime attribute subscriptions"
+      "\n - Developed Flutter apps with modular Clean Architecture for IoT camera/security products"
+      "\n - Integrated BLE onboarding, WebRTC video streaming, MQTT communication, and Firebase analytics/notifications"
+      "\n - Implemented AI features with OpenCV, MediaPipe, ONNX Runtime, TensorFlow Lite, and Vision/CoreML"
+      "\n - Strengthened app security with TLS pinning, secure storage, anti-tamper checks, and App Attest/DeviceCheck"
+      "\n - Built CI/CD pipelines with GitHub Actions, Fastlane, Jenkins, and Nginx to automate build/test/release"
+      "\n - Worked directly with overseas clients, mentored interns/juniors, and led Scrum ceremonies for project delivery"
 ];
 
 const LinkProject_DF =
@@ -103,12 +104,64 @@ const LinkProject_DF =
 /* END EXPERIENCE */
 
 /* ACHIEVEMENTS */
-const Achivements_Title = "ACHIEVEMENTS";
-const startUpWheel = [
+const Achivements_Title = "ACHIEVEMENTS & CERTIFICATES";
+const achievementStartupWheel = [
   "Little Star - In the top 100 of Startup Wheel 2022",
   "July, 2022 - Leader",
-  "Little Star is an app to help children from 3 to 7 years old learn Vietnamese with listening - reading - speaking skills and watch good videos that have safe content and are useful for the growth of the child.\nRead the full story here."
+  "Little Star is a learning app for children from 3 to 7 years old, focused on listening, reading, and speaking. The project reached Top 100 Startup Wheel 2022."
 ];
+const LinkStartupWheel =
+    "https://startupwheel.vn/vi/cong-bo-top-100-startup-wheel-2022-vietnam/";
+
+const achievementYoungTalent = [
+  "Young Talent Award - Digital Fortress",
+  "2023",
+  "Recognized as one of the high-potential engineers for consistent delivery and technical growth."
+];
+const LinkYoungTalentAward = "/assets/images/achievements/YoungTalentAward.jpg";
+
+const achievementSaoVangCongHien = [
+  "Sao Vang Cong Hien Award - Digital Fortress",
+  "2024",
+  "Awarded for contribution, ownership, and positive impact across projects and team execution."
+];
+const LinkSaoVangCongHien = "/assets/images/achievements/SaoVangCongHien.jpg";
+
+const achievementMatterTop12 = [
+  "Matter Utilities - Top 12",
+  "2025",
+  "Matter Utilities product entered the Top 12, highlighting product quality and IoT engineering capability."
+];
+const LinkMatterTop12 =
+    "/assets/images/achievements/matter_utilities_top12.png";
+
+const certificateFlutterBootcamp = [
+  "Flutter Bootcamp Certificate",
+  "2021",
+  "Completed the Flutter Bootcamp program and strengthened practical skills in Flutter app development."
+];
+const LinkFlutterBootcampCertificate =
+    "/assets/images/achievements/flutter_bootcamp_certificate.pdf";
+
+const certificateCESInternship = [
+  "Code Engine Studio Internship Certificate",
+  "2021",
+  "Completed internship program with hands-on backend/API experience and strong team collaboration."
+];
+const LinkCESInternshipCertificate =
+    "/assets/images/achievements/internship_certificate.pdf";
+
+const AchievementImageStartupWheel = "";
+const AchievementImageYoungTalent =
+    "assets/images/achievements/YoungTalentAward.jpg";
+const AchievementImageSaoVangCongHien =
+    "assets/images/achievements/SaoVangCongHien.jpg";
+const AchievementImageMatterTop12 =
+    "assets/images/achievements/matter_utilities_top12.png";
+const AchievementImageFlutterBootcamp =
+    "assets/images/achievements/flutter_bootcamp_certificate.png";
+const AchievementImageCESInternship =
+    "assets/images/achievements/internship_certificate.png";
 /* END ACHIEVEMENTS */
 
 /* PORTFOLIO */
