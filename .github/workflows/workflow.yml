@@ -2,17 +2,18 @@ name: Flutter Web CI/CD
 
 on:
   push:
-    branches: [main, master]
+    branches: ["master"]
   pull_request:
-    branches: [main, master]
+    branches: ["master"]
+
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+# Grant GITHUB_TOKEN the permissions required to make a Pages deployment
 permissions:
   contents: read
-
-concurrency:
-  group: pages-${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  pages: write
+  id-token: write
 
 jobs:
   build:
@@ -26,6 +27,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
+          channel: stable
           flutter-version: 3.38.0
           cache: true
 
@@ -44,27 +46,27 @@ jobs:
           fi
 
       - name: Build web release
-        run: flutter build web --release --base-href /
+        run: flutter build web --base-href /${{ github.event.repository.name }}/ --release
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v4
 
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
+          name: github-pages
           path: build/web
 
+  # https://github.com/actions/deploy-pages
   deploy:
-    name: Deploy to GitHub Pages
-    needs: build
-    if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
     runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Deploy pages artifact
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
