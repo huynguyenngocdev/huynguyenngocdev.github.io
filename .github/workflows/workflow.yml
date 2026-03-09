@@ -46,7 +46,17 @@ jobs:
           fi
 
       - name: Build web release
-        run: flutter build web --base-href /${{ github.event.repository.name }}/ --release
+        run: |
+          REPO_NAME="${{ github.event.repository.name }}"
+
+          if [[ "$REPO_NAME" == *.github.io ]]; then
+            BASE_HREF="/"
+          else
+            BASE_HREF="/$REPO_NAME/"
+          fi
+
+          echo "Using base href: $BASE_HREF"
+          flutter build web --base-href "$BASE_HREF" --release
 
       - name: Configure Pages
         uses: actions/configure-pages@v4
